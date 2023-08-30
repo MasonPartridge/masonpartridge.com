@@ -1,5 +1,3 @@
-// Generated using webpack-cli https://github.com/webpack/webpack-cli
-
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -12,6 +10,12 @@ const config = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
+  },
+  resolve: {
+    alias: {
+      '@picture': path.resolve(__dirname, "./public/pictures"),
+      '@styles': path.resolve(__dirname, "./public/styles"),
+    },
   },
   devServer: {
     open: true,

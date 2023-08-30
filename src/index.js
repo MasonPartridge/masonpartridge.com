@@ -1,8 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import LandingPage from "./pages/LandingPage";
+import '@styles/style.css';
 
 export default function App() {
-    return <h1>Hello World!</h1>;
+    return (
+    <LandingPage />
+    );
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));

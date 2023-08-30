@@ -10,7 +10,7 @@
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
     "serve": "webpack serve --open",
-    "postcss": "postcss -i ./main.css -o public/style.css",
+    "postcss": "postcss ./public/styles/style.css -o dist/main.css",
     "dev": "concurrently \"npm run watch\" \"npm run serve\" \"npm run postcss\""
   },
   "repository": {
