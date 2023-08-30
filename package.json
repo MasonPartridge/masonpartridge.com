@@ -9,8 +9,9 @@
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
-    "serve": "webpack serve",
-    "postcss": "postcss -i ./main.css -o public/style.css"
+    "serve": "webpack serve --open",
+    "postcss": "postcss -i ./main.css -o public/style.css",
+    "dev": "concurrently \"npm run watch\" \"npm run serve\" \"npm run postcss\""
   },
   "repository": {
     "type": "git",
@@ -43,6 +44,10 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "babel": "^6.23.0"
+    "babel": "^6.23.0",
+    "concurrently": "^8.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "reactdom": "^2.0.0"
   }
 }
