@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import LandingPage from "./pages/LandingPage";
 import '@styles/style.css';
 
@@ -9,6 +9,6 @@ export default function App() {
     );
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+createRoot(document.getElementById("root")).render(<App />);
 
 console.log("Hello World!");

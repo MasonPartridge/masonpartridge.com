@@ -1,5 +1,7 @@
 import React from "react";
 import MeImage from "@picture/Me.png";
+import Skills from "../components/Skills";
+
 
 export default function LandingPage() {
   return (
@@ -16,7 +18,7 @@ export default function LandingPage() {
           <h2>Eye Color: Blue</h2>
         </div>
       </div>
-      <div className="flex h-[15vh] text-white"></div>
+      <Skills />
     </div>
   );
 }

@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Handjet&family=Share+Tech+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handjet&family=Share+Tech+Mono&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.scroll-hidden {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
