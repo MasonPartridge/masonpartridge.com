@@ -1,11 +1,12 @@
 import React from "react";
 import MeImage from "@picture/Me.png";
 import Skills from "../components/Skills";
+import Experience from "../components/Experience";
 
 
 export default function LandingPage() {
   return (
-    <div className="bg-black flex flex-col items-center w-[100%] h-[100%] font-tech">
+    <div className="bg-gray-950 flex flex-col items-center w-[100%] h-[100%] font-tech">
       <div className="w-[100%] h-[100vh] flex justify-center gap-8 items-center">
         <img className="rounded-full h-64 w-64" src={MeImage} alt="logo" />
         <div className="text-white mt-32">
@@ -19,6 +20,7 @@ export default function LandingPage() {
         </div>
       </div>
       <Skills />
+      <Experience />
     </div>
   );
 }
