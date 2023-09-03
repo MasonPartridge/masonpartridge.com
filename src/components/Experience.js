@@ -4,10 +4,10 @@ import CommunityAliThumbnail from "@picture/CommunityAliThumbnail.png";
 
 function ExperienceCard(props) {
   return (
-    <div className="flex gap-16">
+    <div className="flex gap-16 bg-slate-900 p-6 rounded-3xl">
       <img className="w-[600px]" src={props.image} alt="" />
       <div>
-        <h1>{props.title}</h1>
+        <h1 className="text-[32px]">{props.title}</h1>
         <p>{props.body}</p>
         <button>Learn More</button>
       </div>
@@ -41,7 +41,7 @@ export default function Experience() {
   const personalExperience = [];
 
   return (
-    <div className="px-16 py-32 gap-32 text-white h-[75vh] flex flex-col 
+    <div className="px-16 py-32 gap-16 text-white h-[75vh] flex flex-col 
         items-center bg-slate-800">
       <h1 className="text-center text-[300%] font-bold">Professional Experience</h1>
       <div>
