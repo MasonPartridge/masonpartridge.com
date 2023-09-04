@@ -31,10 +31,10 @@ export default function LandingPage() {
         </p>
         <div className="flex items-center gap-4 text-lg">
           <a href="https://www.linkedin.com/in/mason-partridge-a828a1246/">
-            <i class="fa-brands fa-linkedin text-white"></i>
+            <i className="fa-brands fa-linkedin text-white"></i>
           </a>
-          <a href="https://github.com/MasonPartridge"><i class="fa-brands fa-github"></i></a>
-          <a href="mailto: masonepartridge@gmail.com"><i class="fa-solid fa-envelope text-white"></i></a>
+          <a href="https://github.com/MasonPartridge"><i className="fa-brands fa-github"></i></a>
+          <a href="mailto: masonepartridge@gmail.com"><i className="fa-solid fa-envelope text-white"></i></a>
           <p>Phone: +1 (209) 535-7036</p>
         </div>
       </div>
