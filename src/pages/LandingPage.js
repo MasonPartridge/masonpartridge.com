@@ -20,15 +20,23 @@ export default function LandingPage() {
       </div>
       <Skills />
       <Experience />
-      <div className="text-white py-32">
-        <h1 className="text-[300%]">Contact Me</h1>
+      <div className="text-white flex flex-col gap-2 py-32">
+        <h1 className="text-[300%]">Contact Me:</h1>
         <p className="text-[150%]">
-          If you need a website made quickly and for cheap I can assist! I am only an
-          email away:{" "}
+          If you need a website made quickly and for cheap I can assist! I am
+          only an email away:{" "}
           <a className="text-blue-400" href="mailto: masonepartridge@gmail.com">
             masonepartridge@gmail.com
           </a>
         </p>
+        <div className="flex items-center gap-4 text-lg">
+          <a href="https://www.linkedin.com/in/mason-partridge-a828a1246/">
+            <i class="fa-brands fa-linkedin text-white"></i>
+          </a>
+          <a href="https://github.com/MasonPartridge"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto: masonepartridge@gmail.com"><i class="fa-solid fa-envelope text-white"></i></a>
+          <p>Phone: +1 (209) 535-7036</p>
+        </div>
       </div>
     </div>
   );
