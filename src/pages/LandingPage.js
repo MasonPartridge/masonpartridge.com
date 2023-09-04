@@ -3,7 +3,6 @@ import MeImage from "@picture/Me.png";
 import Skills from "../components/Skills";
 import Experience from "../components/Experience";
 
-
 export default function LandingPage() {
   return (
     <div className="bg-gray-950 flex flex-col items-center w-[100%] h-[100%] font-tech">
@@ -21,6 +20,17 @@ export default function LandingPage() {
       </div>
       <Skills />
       <Experience />
+      <div className="text-white py-32">
+        <h1 className="text-[300%]">Contact Me</h1>
+        <p className="text-[150%]">
+          If you need a website made quickly and for cheap I can assist! Just an
+          email away:{" "}
+          <a className="text-blue-400" href="mailto: masonepartridge@gmail.com">
+            masonepartridge@gmail.com
+          </a>
+        </p>
+        <a href=""></a>
+      </div>
     </div>
   );
 }
