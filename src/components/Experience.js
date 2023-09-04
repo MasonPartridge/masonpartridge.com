@@ -76,6 +76,7 @@ export default function Experience() {
         {professionalExperience.map((experience) => {
           return (
             <ExperienceCard
+              key={experience.title}
               image={experience.image}
               title={experience.title}
               body={experience.body}
@@ -89,6 +90,7 @@ export default function Experience() {
         {personalExperience.map((experience) => {
           return (
             <ExperienceCard
+              key={experience.title}
               image={experience.image}
               title={experience.title}
               body={experience.body}
