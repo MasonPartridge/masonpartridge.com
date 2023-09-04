@@ -23,13 +23,12 @@ export default function LandingPage() {
       <div className="text-white py-32">
         <h1 className="text-[300%]">Contact Me</h1>
         <p className="text-[150%]">
-          If you need a website made quickly and for cheap I can assist! Just an
+          If you need a website made quickly and for cheap I can assist! I am only an
           email away:{" "}
           <a className="text-blue-400" href="mailto: masonepartridge@gmail.com">
             masonepartridge@gmail.com
           </a>
         </p>
-        <a href=""></a>
       </div>
     </div>
   );
