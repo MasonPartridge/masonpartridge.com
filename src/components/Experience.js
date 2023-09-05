@@ -4,15 +4,8 @@ import CommunityAliThumbnail from "@picture/CommunityAliThumbnail.png";
 import ProfilioThumbnail from "@picture/ProfilioThumbnail.png";
 
 function ExperienceCard(props) {
-  const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    if (window.innerWidth < 1024) {
-      setIsMobile(true);
-    }
-  }, []);
-
-  if (props.imageSide === "left" || isMobile) {
+  if (props.imageSide === "left" || props.isMobile) {
     return (
       <div className="flex lx:flex-row flex-col lx:items-start items-center 
         lx:gap-16 gap-8 bg-slate-900 p-6 rounded-3xl">
