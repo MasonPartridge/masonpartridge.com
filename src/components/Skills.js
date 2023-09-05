@@ -74,7 +74,10 @@ export default function Skills() {
   }, [seconds]);
 
   return (
-    <div className="flex flex-col gap-8 justify-center w-[100%] items-center h-[45vh] bg-slate-900 text-white px-32">
+    <div
+      className="flex flex-col gap-8 justify-center w-[100%] items-center h-[45vh] bg-slate-900 text-white px-32"
+      id="skills"
+    >
       <h1 className="text-[300%] font-bold">Skills</h1>
       <div className="w-[100%] gap-8 flex">
         <button className="text-[500%]">&lt;</button>

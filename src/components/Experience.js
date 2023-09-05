@@ -65,7 +65,7 @@ export default function Experience() {
   ];
 
   return (
-    <div
+    <div id="professional-experience"
       className="px-16 py-32 gap-16 text-white flex flex-col 
         items-center bg-slate-800"
     >
@@ -85,7 +85,7 @@ export default function Experience() {
           );
         })}
       </div>
-      <h1 className="text-center text-[300%] font-bold">Personal Experience</h1>
+      <h1 id="personal-experience" className="text-center text-[300%] font-bold">Personal Experience</h1>
       <div>
         {personalExperience.map((experience) => {
           return (
