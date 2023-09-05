@@ -6,7 +6,7 @@ import Experience from "../components/Experience";
 export default function LandingPage() {
   return (
     <div className="bg-gray-950 flex flex-col items-center w-[100%] h-[100%] font-tech">
-      <div className="text-white fixed bg-black px-4 w-[100%] justify-center flex gap-4 text-lg">
+      <div className="text-white z-50 fixed bg-black px-4 w-[100%] justify-center flex gap-4 text-lg">
         <a className="hover:font-bold" href="#home">Home</a>
         <a className="hover:font-bold" href="#skills">Skills</a>
         <a className="hover:font-bold" href="#professional-experience">Professional Experience</a>
