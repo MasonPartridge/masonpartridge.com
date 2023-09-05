@@ -8,20 +8,30 @@ function ExperienceCard(props) {
     return (
       <div className="flex gap-16 bg-slate-900 p-6 rounded-3xl">
         <img className="w-[600px] h-[314px]" src={props.image} alt="" />
-        <div>
-          <h1 className="text-[300%]">{props.title}</h1>
-          <p>{props.body}</p>
-          <button >Learn More</button>
+        <div className="h-[314px] flex flex-col">
+          <div className="relative flex-grow item overflow-y-hidden">
+            <h1 className="text-[200%]">{props.title}</h1>
+            <p>{props.body}</p>
+            <div className="bg-gradient-to-t from-gray-900 absolute bottom-0 w-[100%] h-[30%]"></div>
+          </div>
+          <button className="font-bold text-blue-400 pt-2 text-left">
+            Learn More
+          </button>
         </div>
       </div>
     );
   }
   return (
     <div className="flex gap-16 bg-slate-900 p-6 rounded-3xl">
-      <div>
-        <h1 className="text-[300%]">{props.title}</h1>
-        <p>{props.body}</p>
-        <button>Learn More</button>
+      <div className="h-[314px] flex flex-col">
+        <div className="relative flex-grow item overflow-y-hidden">
+          <h1 className="text-[200%]">{props.title}</h1>
+          <p>{props.body}</p>
+          <div className="bg-gradient-to-t from-gray-900 absolute bottom-0 w-[100%] h-[30%]"></div>
+        </div>
+        <button className="font-bold text-blue-400 pt-2 text-left">
+          Learn More
+        </button>
       </div>
       <img className="w-[600px] h-[314px]" src={props.image} alt="" />
     </div>
@@ -65,7 +75,8 @@ export default function Experience() {
   ];
 
   return (
-    <div id="professional-experience"
+    <div
+      id="professional-experience"
       className="px-16 py-32 gap-16 text-white flex flex-col 
         items-center bg-slate-800"
     >
@@ -85,7 +96,12 @@ export default function Experience() {
           );
         })}
       </div>
-      <h1 id="personal-experience" className="text-center text-[300%] font-bold">Personal Experience</h1>
+      <h1
+        id="personal-experience"
+        className="text-center text-[300%] font-bold"
+      >
+        Personal Experience
+      </h1>
       <div>
         {personalExperience.map((experience) => {
           return (

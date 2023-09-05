@@ -75,7 +75,7 @@ export default function Skills() {
 
   return (
     <div
-      className="flex flex-col gap-8 justify-center w-[100%] items-center h-[45vh] bg-slate-900 text-white px-32"
+      className="flex flex-col gap-8 justify-center w-[100%] items-center py-32 bg-slate-900 text-white px-32"
       id="skills"
     >
       <h1 className="text-[300%] font-bold">Skills</h1>
@@ -93,7 +93,7 @@ export default function Skills() {
                   target="_blank"
                   key={skill.link}
                   href={skill.link}
-                  className="h-[256px] flex-shrink-0 w-[256px]"
+                  className="h-32 flex-shrink-0 w-32"
                 >
                   <img
                     className="bg-white w-[100%] h-[100%] rounded-full object-contain"
