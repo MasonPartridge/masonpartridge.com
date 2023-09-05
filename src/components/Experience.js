@@ -76,43 +76,43 @@ export default function Experience() {
 
   return (
     <div
-      id="professional-experience"
-      className="px-16 py-32 gap-16 text-white flex flex-col 
+      className="px-16 py-32 text-white flex flex-col 
         items-center bg-slate-800"
     >
-      <h1 className="text-center text-[300%] font-bold">
-        Professional Experience
-      </h1>
-      <div>
-        {professionalExperience.map((experience) => {
-          return (
-            <ExperienceCard
-              key={experience.title}
-              image={experience.image}
-              title={experience.title}
-              body={experience.body}
-              imageSide={experience.imageSide}
-            />
-          );
-        })}
+      <div className="flex flex-col gap-16">
+        <h1 className="text-center text-[300%] font-bold">
+          Professional Experience
+        </h1>
+        <div id="professional-experience">
+          {professionalExperience.map((experience) => {
+            return (
+              <ExperienceCard
+                key={experience.title}
+                image={experience.image}
+                title={experience.title}
+                body={experience.body}
+                imageSide={experience.imageSide}
+              />
+            );
+          })}
+        </div>
       </div>
-      <h1
-        id="personal-experience"
-        className="text-center text-[300%] font-bold"
-      >
-        Personal Experience
-      </h1>
-      <div>
-        {personalExperience.map((experience) => {
-          return (
-            <ExperienceCard
-              key={experience.title}
-              image={experience.image}
-              title={experience.title}
-              body={experience.body}
-            />
-          );
-        })}
+      <div id="personal-experience" className="flex flex-col gap-16 pt-16">
+        <h1 className="text-center text-[300%] font-bold">
+          Personal Experience
+        </h1>
+        <div>
+          {personalExperience.map((experience) => {
+            return (
+              <ExperienceCard
+                key={experience.title}
+                image={experience.image}
+                title={experience.title}
+                body={experience.body}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
