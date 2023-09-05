@@ -20,6 +20,7 @@ export default function LandingPage() {
         <img className="rounded-full h-64 w-64" src={MeImage} alt="logo" />
         <div className="text-white mt-32">
           <h1 className="text-[6vw]">Mason Edward Partridge </h1>
+          <h1>Occupation: <b className="text-lg">Web Developer</b></h1>
           <h1>Identification: MASON EDWARD PARTRIDGE</h1>
           <h2>Nickname: SudoNoun</h2>
           <h2>Age: 21</h2>
