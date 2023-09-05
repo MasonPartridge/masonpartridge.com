@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import CommunityAliThumbnail from "@picture/CommunityAliThumbnail.png";
 import ProfilioThumbnail from "@picture/ProfilioThumbnail.png";
 
 function ExperienceCard(props) {
-  if (props.imageSide === "left") {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 1024) {
+      setIsMobile(true);
+    }
+  }, []);
+
+  if (props.imageSide === "left" || isMobile) {
     return (
-      <div className="flex gap-16 bg-slate-900 p-6 rounded-3xl">
-        <img className="w-[600px] h-[314px]" src={props.image} alt="" />
+      <div className="flex lx:flex-row flex-col lx:items-start items-center 
+        lx:gap-16 gap-8 bg-slate-900 p-6 rounded-3xl">
+        <img className="lx:w-[600px] w-[100%] lx:max-h-[314px]" src={props.image} alt="" />
         <div className="h-[314px] flex flex-col">
           <div className="relative flex-grow item overflow-y-hidden">
             <h1 className="text-[200%]">{props.title}</h1>
