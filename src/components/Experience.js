@@ -16,9 +16,9 @@ function ExperienceCard(props) {
             <p>{props.body}</p>
             <div className="bg-gradient-to-t from-gray-900 absolute bottom-0 w-[100%] h-[30%]"></div>
           </div>
-          <button className="font-bold text-blue-400 pt-2 text-left">
+          {props.isMobile && <button className="font-bold text-blue-400 pt-2 text-left">
             Learn More
-          </button>
+          </button>}
         </div>
       </div>
     );
@@ -31,9 +31,9 @@ function ExperienceCard(props) {
           <p>{props.body}</p>
           <div className="bg-gradient-to-t from-gray-900 absolute bottom-0 w-[100%] h-[30%]"></div>
         </div>
-        <button className="font-bold text-blue-400 pt-2 text-left">
+        { props.isMobile && <button className="font-bold text-blue-400 pt-2 text-left">
           Learn More
-        </button>
+        </button>}
       </div>
       <img className="w-[600px] h-[314px]" src={props.image} alt="" />
     </div>

@@ -14,3 +14,17 @@
 .scroll-hidden::-webkit-scrollbar {
   display: none;
 }
+
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  height: 128px;
+}
+
+.embla__slide {
+  flex: 0 0 128px;
+  min-width: 0;
+}
