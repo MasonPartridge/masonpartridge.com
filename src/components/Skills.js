@@ -52,7 +52,7 @@ export default function Skills() {
     },
   ];
 
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({delay: 1250, play: true})]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, dragFree: true }, [Autoplay({delay: 1250, play: true})]);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
