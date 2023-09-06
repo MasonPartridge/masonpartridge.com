@@ -413,7 +413,6 @@ video {
 .text-left{text-align:left !important}
 .text-center{text-align:center !important}
 .font-tech{font-family:Share Tech Mono, monospace !important}
-.text-\[100\%\]{font-size:100% !important}
 .text-\[150\%\]{font-size:150% !important}
 .text-\[200\%\]{font-size:200% !important}
 .text-\[300\%\]{font-size:300% !important}
@@ -443,7 +442,7 @@ video {
 .hover\:text-\[2vw\]:hover{font-size:2vw !important}
 .hover\:font-bold:hover{font-weight:700 !important}
 @media (min-width: 768px){
-.md\:text-\[200\%\]{font-size:200% !important}}
+.md\:text-\[150\%\]{font-size:150% !important}}
 @media (min-width: 1280px){
 .xl\:flex-row{flex-direction:row !important}
 .xl\:gap-16{gap:4rem !important}
