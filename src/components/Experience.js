@@ -8,7 +8,7 @@ function ExperienceCard(props) {
     return (
       <div
         className="flex lx:flex-row flex-col lx:items-start items-center 
-        lx:gap-16 gap-8 bg-slate-900 p-6 rounded-3xl"
+        lx:gap-16 gap-8 bg-slate-900 p-6 rounded-3xl overflow-hidden"
       >
         <img
           className="lx:w-[600px] w-[100%] lx:max-h-[314px]"
@@ -16,10 +16,10 @@ function ExperienceCard(props) {
           alt=""
         />
         <div className="h-[314px] flex flex-col">
-          <div className="relative flex-grow item overflow-y-hidden">
+          <div className="relative flex-grow item">
             <h1 className="text-[200%]">{props.title}</h1>
             <p>{props.body}</p>
-            <div className="bg-gradient-to-t from-gray-900 absolute bottom-0 w-[100%] h-[30%]"></div>
+            {/* <div className="bg-gradient-to-t from-gray-900 absolute bottom-0 w-[100%] h-[30%]"></div> */}
           </div>
           {props.isMobile && (
             <button className="font-bold text-blue-400 pt-2 text-left">
@@ -31,12 +31,12 @@ function ExperienceCard(props) {
     );
   }
   return (
-    <div className="flex gap-16 bg-slate-900 p-6 rounded-3xl">
-      <div className="h-[314px] flex flex-col">
-        <div className="relative flex-grow item overflow-y-hidden">
-          <h1 className="text-[200%]">{props.title}</h1>
+    <div className="flex gap-16 bg-slate-900 p-6 rounded-3xl overflow-hidden">
+      <div className="flex flex-col">
+        <div className="relative flex-grow item">
+          <h1 className="md:text-[200%] text-[100%]">{props.title}</h1>
           <p>{props.body}</p>
-          <div className="bg-gradient-to-t from-gray-900 absolute bottom-0 w-[100%] h-[30%]"></div>
+          {/* <div className="bg-gradient-to-t from-gray-900 absolute bottom-0 w-[100%] h-[30%]"></div> */}
         </div>
         {props.isMobile && (
           <button className="font-bold text-blue-400 pt-2 text-left">
@@ -44,7 +44,7 @@ function ExperienceCard(props) {
           </button>
         )}
       </div>
-      <img className="w-[600px] h-[314px]" src={props.image} alt="" />
+      <img className="w-[50%] flex-grow-0" src={props.image} alt="" />
     </div>
   );
 }
