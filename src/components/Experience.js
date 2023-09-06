@@ -31,10 +31,10 @@ function ExperienceCard(props) {
     );
   }
   return (
-    <div className="flex gap-16 bg-slate-900 p-6 rounded-3xl">
+    <div className="flex gap-16 bg-slate-900 p-6 items-center rounded-3xl">
       <div className="flex flex-col">
         <div className="relative flex-grow item">
-          <h1 className="md:text-[200%] text-[100%]">{props.title}</h1>
+          <h1 className="md:text-[150%]">{props.title}</h1>
           <p>{props.body}</p>
           {/* <div className="bg-gradient-to-t from-gray-900 absolute bottom-0 w-[100%] h-[30%]"></div> */}
         </div>
