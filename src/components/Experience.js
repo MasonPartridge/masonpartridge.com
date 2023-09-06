@@ -31,7 +31,7 @@ function ExperienceCard(props) {
     );
   }
   return (
-    <div className="flex gap-16 bg-slate-900 p-6 items-center rounded-3xl">
+    <div className="flex gap-16 bg-slate-900 p-6 rounded-3xl">
       <div className="flex flex-col">
         <div className="relative flex-grow item">
           <h1 className="md:text-[150%]">{props.title}</h1>
@@ -44,7 +44,7 @@ function ExperienceCard(props) {
           </button>
         )}
       </div>
-      <img className="w-[600px] h-[314px]" src={props.image} alt="" />
+      <img className="w-[600px] my-auto h-[314px]" src={props.image} alt="" />
     </div>
   );
 }
