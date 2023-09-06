@@ -370,6 +370,7 @@ video {
 .top-\[25\%\]{top:25% !important}
 .z-50{z-index:50 !important}
 .mx-1{margin-left:0.25rem !important;margin-right:0.25rem !important}
+.my-auto{margin-top:auto !important;margin-bottom:auto !important}
 .mt-32{margin-top:8rem !important}
 .flex{display:flex !important}
 .h-64{height:16rem !important}
