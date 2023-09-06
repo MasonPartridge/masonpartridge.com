@@ -369,6 +369,7 @@ video {
 .bottom-0{bottom:0px !important}
 .top-\[25\%\]{top:25% !important}
 .z-50{z-index:50 !important}
+.mx-1{margin-left:0.25rem !important;margin-right:0.25rem !important}
 .mt-32{margin-top:8rem !important}
 .flex{display:flex !important}
 .h-64{height:16rem !important}
@@ -378,6 +379,7 @@ video {
 .h-\[314px\]{height:314px !important}
 .w-64{width:16rem !important}
 .w-\[100\%\]{width:100% !important}
+.w-\[2vw\]{width:2vw !important}
 .w-\[42px\]{width:42px !important}
 .w-\[600px\]{width:600px !important}
 .flex-grow{flex-grow:1 !important}
@@ -431,13 +433,13 @@ video {
 }
 .embla__container {
   display: flex;
-  height: 128px;
+  height: 15vw;
 }
 .embla__slide {
-  flex: 0 0 128px;
+  flex: 0 0 15vw;
   min-width: 0;
 }
-.hover\:text-\[32px\]:hover{font-size:32px !important}
+.hover\:text-\[2vw\]:hover{font-size:2vw !important}
 .hover\:font-bold:hover{font-weight:700 !important}
 @media (min-width: 1280px){
 .xl\:flex-row{flex-direction:row !important}
