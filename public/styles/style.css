@@ -21,10 +21,10 @@
 
 .embla__container {
   display: flex;
-  height: 128px;
+  height: 15vw;
 }
 
 .embla__slide {
-  flex: 0 0 128px;
+  flex: 0 0 15vw;
   min-width: 0;
 }

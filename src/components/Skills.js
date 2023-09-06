@@ -1,6 +1,4 @@
 import React, { useState, useCallback, useEffect } from "react";
-import { useDraggable } from "react-use-draggable-scroll";
-import { useStopwatch, useTimer } from "react-timer-hook";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from 'embla-carousel-autoplay'
 
@@ -54,28 +52,7 @@ export default function Skills() {
     },
   ];
 
-  // const autoScrollInvervalInSeconds = 2;
-  // const autoScrollJumpPx = 256;
-  // const scrollRef = React.useRef(null);
-  // const { events } = useDraggable(scrollRef);
-  // const { seconds, reset } = useStopwatch({ autoStart: true });
-
-  // const [scrollX, setScrollX] = useState(2427);
-  // const [isAutoScrolling, setIsAutoScrolling] = useState(true);
-
-  // useEffect(() => {
-  //   console.log(seconds);
-  //   if (isAutoScrolling && seconds >= autoScrollInvervalInSeconds) {
-  //     scrollRef.current.scrollLeft =
-  //       scrollRef.current.scrollLeft < scrollRef.current.scrollWidth
-  //         ? scrollRef.current.scrollLeft + autoScrollJumpPx
-  //         : 0;
-  //     reset();
-  //   }
-  // }, [seconds]);
-
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({delay: 1250, play: true})]);
-
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -93,7 +70,7 @@ export default function Skills() {
       <h1 className="text-[300%] font-bold">Skills</h1>
       <div className="w-[100%] gap-8 justify-center flex">
         <button className="embla__next border-white w-[42px]" onClick={scrollPrev}>
-        <i className="fa-solid text-white fa-caret-right fa-flip-horizontal hover:text-[32px]"></i>
+        <i className="fa-solid text-white fa-caret-right fa-flip-horizontal w-[2vw] hover:text-[2vw]"></i>
         </button>
 
         <div className="embla" ref={emblaRef}>
@@ -104,7 +81,7 @@ export default function Skills() {
                   target="_blank"
                   key={skill.link}
                   href={skill.link}
-                  className="embla__slide"
+                  className="embla__slide mx-1"
                 >
                   <img
                     className="bg-white w-[100%] h-[100%] rounded-full object-contain"
@@ -116,7 +93,7 @@ export default function Skills() {
             })}
           </div>
         </div>
-        <button className="embla__next border-white w-[42px] hover:text-[32px]" onClick={scrollNext}>
+        <button className="embla__next border-white w-[2vw] hover:text-[2vw]" onClick={scrollNext}>
         <i className="fa-solid text-white fa-caret-right"></i>
         </button>
       </div>
