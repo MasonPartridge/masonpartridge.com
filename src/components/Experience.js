@@ -17,7 +17,13 @@ function ExperienceCard(props) {
         />
         <div className="h-[314px] flex flex-col">
           <div className="relative flex-grow item">
-            <h1 className="text-[200%]">{props.title}</h1>
+            <a
+              href={props.link}
+              target="_blank"
+              className="text-[200%] text-blue-400"
+            >
+              {props.title}
+            </a>
             <p>{props.body}</p>
             {/* <div className="bg-gradient-to-t from-gray-900 absolute bottom-0 w-[100%] h-[30%]"></div> */}
           </div>
@@ -34,7 +40,13 @@ function ExperienceCard(props) {
     <div className="flex gap-16 bg-slate-900 p-6 rounded-3xl">
       <div className="flex flex-col">
         <div className="relative flex-grow item">
-          <h1 className="md:text-[150%]">{props.title}</h1>
+          <a
+            href={props.link}
+            target="_blank"
+            className="md:text-[150%] text-blue-400"
+          >
+            {props.title}
+          </a>
           <p>{props.body}</p>
           {/* <div className="bg-gradient-to-t from-gray-900 absolute bottom-0 w-[100%] h-[30%]"></div> */}
         </div>
@@ -71,6 +83,7 @@ export default function Experience() {
       I worked on this project from 2023-02-01 to 2023-09-01.`,
       image: CommunityAliThumbnail,
       imageSide: "left",
+      link: "https://www.communityali.org/",
     },
   ];
   const personalExperience = [
@@ -82,6 +95,7 @@ export default function Experience() {
     was the carocell component, which is a component that allows you to scroll
     through all the technologies I have experience with.`,
       image: ProfilioThumbnail,
+      link: "https://github.com/MasonPartridge",
     },
   ];
 
@@ -103,6 +117,7 @@ export default function Experience() {
                 title={experience.title}
                 body={experience.body}
                 imageSide={experience.imageSide}
+                link={experience.link}
               />
             );
           })}
@@ -120,6 +135,7 @@ export default function Experience() {
                 image={experience.image}
                 title={experience.title}
                 body={experience.body}
+                link={experience.link}
               />
             );
           })}
