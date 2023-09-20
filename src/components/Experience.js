@@ -2,16 +2,17 @@ import React, { useEffect, useState } from "react";
 
 import CommunityAliThumbnail from "@picture/CommunityAliThumbnail.png";
 import ProfilioThumbnail from "@picture/ProfilioThumbnail.png";
+import PadserThumbnail from "@picture/PadserThumbnail.png";
 
 function ExperienceCard(props) {
-  if (props.imageSide === "left" || props.isMobile) {
+  if (props.imageSide === "center" || props.isMobile) {
     return (
       <div
         className="flex lx:flex-row flex-col lx:items-start items-center 
         lx:gap-16 gap-8 bg-slate-900 p-6 rounded-3xl"
       >
         <img
-          className="lx:w-[600px] w-[100%] lx:max-h-[314px]"
+          className="rounded-lg lx:w-[600px] w-[100%] lx:max-h-[314px]"
           src={props.image}
           alt=""
         />
@@ -36,6 +37,31 @@ function ExperienceCard(props) {
       </div>
     );
   }
+  if (props.imageSide === "left") {
+    return (
+      <div className="flex gap-16 bg-slate-900 p-6 rounded-3xl">
+      <img className="rounded-lg w-[600px] my-auto h-[314px]" src={props.image} alt="" />
+        <div className="flex flex-col">
+          <div className="relative flex-grow item">
+            <a
+              href={props.link}
+              target="_blank"
+              className="md:text-[150%] text-blue-400"
+            >
+              {props.title}
+            </a>
+            <p>{props.body}</p>
+            {/* <div className="bg-gradient-to-t from-gray-900 absolute bottom-0 w-[100%] h-[30%]"></div> */}
+          </div>
+          {props.isMobile && (
+            <button className="font-bold text-blue-400 pt-2 text-left">
+              Learn More
+            </button>
+          )}
+        </div>
+      </div>
+    )
+  }
   return (
     <div className="flex gap-16 bg-slate-900 p-6 rounded-3xl">
       <div className="flex flex-col">
@@ -56,7 +82,7 @@ function ExperienceCard(props) {
           </button>
         )}
       </div>
-      <img className="w-[600px] my-auto h-[314px]" src={props.image} alt="" />
+      <img className="rounded-lg w-[600px] my-auto h-[314px]" src={props.image} alt="" />
     </div>
   );
 }
@@ -80,9 +106,9 @@ export default function Experience() {
       Refactoring the backend to use the MVC, Model, View, Controller 
       architecture pattern.
       
-      I worked on this project from 2023-02-01 to 2023-09-01.`,
+      I worked on this project from 2023-02-01 to current date.`,
       image: CommunityAliThumbnail,
-      imageSide: "left",
+      imageSide: "center",
       link: "https://www.communityali.org/",
     },
   ];
@@ -97,6 +123,15 @@ export default function Experience() {
       image: ProfilioThumbnail,
       link: "https://github.com/MasonPartridge",
     },
+    {
+      title: "Padser-SketchPad",
+      body: `I worked on this project as a way to learn more about javascript, html, and css.
+    I used html, css, and javascript for the frontend and am using Github Pages for hosting.`,
+      image: PadserThumbnail,
+      imageSide: "left",
+      link: "https://masonpartridge.github.io/Padser-SketchPad/"
+    }
+  
   ];
 
   return (
@@ -128,7 +163,7 @@ export default function Experience() {
           <h1 className="text-center text-[300%] font-bold">
             Personal Experience
           </h1>
-          <div>
+          <div className="flex flex-col gap-16">
             {personalExperience.map((experience) => {
               return (
                 <ExperienceCard
@@ -137,6 +172,7 @@ export default function Experience() {
                   title={experience.title}
                   body={experience.body}
                   link={experience.link}
+                  imageSide={experience.imageSide}
                 />
               );
             })}
