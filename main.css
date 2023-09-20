@@ -444,6 +444,9 @@ video {
 .hover\:font-bold:hover{font-weight:700 !important}
 @media (min-width: 768px){
 .md\:text-\[150\%\]{font-size:150% !important}}
+@media (min-width: 1024px){
+.lg\:max-w-\[80\%\]{max-width:80% !important}
+.lg\:max-w-\[90\%\]{max-width:90% !important}}
 @media (min-width: 1280px){
 .xl\:flex-row{flex-direction:row !important}
 .xl\:gap-16{gap:4rem !important}
