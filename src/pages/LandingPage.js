@@ -4,7 +4,7 @@ import Skills from "../components/Skills";
 import Experience from "../components/Experience";
 
 export default function LandingPage() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
 
   useEffect(() => {
     if (window.innerWidth < 1024) {
