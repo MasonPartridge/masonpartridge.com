@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CnameWebpackPlugin = require('cname-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -24,6 +25,9 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "index.html",
+    }),
+    new CnameWebpackPlugin({
+      domain: 'www.masonpartridge.com',
     }),
 
     new MiniCssExtractPlugin(),
