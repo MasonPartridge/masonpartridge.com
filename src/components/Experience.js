@@ -92,7 +92,7 @@ export default function Experience() {
       body: `I worked on this website as a way to showcase my skills and experience
     as a web developer. I used React.js, tailwindcss, and Webpack for frontend 
     and am using Github Pages for hosting. The most challenging part of this project
-    was the carocell component, which is a component that allows you to scroll
+    was the implementing the carocell component, a component that allows you to scroll
     through all the technologies I have experience with.`,
       image: ProfilioThumbnail,
       link: "https://github.com/MasonPartridge",
@@ -100,45 +100,47 @@ export default function Experience() {
   ];
 
   return (
-    <div
-      className="px-16 py-32 text-white flex flex-col 
-        items-center bg-slate-800"
-    >
-      <div className="flex flex-col gap-16">
-        <h1 className="text-center text-[300%] font-bold">
-          Professional Experience
-        </h1>
-        <div id="professional-experience">
-          {professionalExperience.map((experience) => {
-            return (
-              <ExperienceCard
-                key={experience.title}
-                image={experience.image}
-                title={experience.title}
-                body={experience.body}
-                imageSide={experience.imageSide}
-                link={experience.link}
-              />
-            );
-          })}
+    <div className="bg-slate-800 w-[100%] flex justify-center">
+      <div
+        className="lg:max-w-[80%] px-16 py-32 text-white flex flex-col
+          items-center "
+      >
+        <div className="flex flex-col gap-16">
+          <h1 className="text-center text-[300%] font-bold">
+            Professional Experience
+          </h1>
+          <div id="professional-experience">
+            {professionalExperience.map((experience) => {
+              return (
+                <ExperienceCard
+                  key={experience.title}
+                  image={experience.image}
+                  title={experience.title}
+                  body={experience.body}
+                  imageSide={experience.imageSide}
+                  link={experience.link}
+                />
+              );
+            })}
+          </div>
         </div>
-      </div>
-      <div id="personal-experience" className="flex flex-col gap-16 pt-16">
-        <h1 className="text-center text-[300%] font-bold">
-          Personal Experience
-        </h1>
-        <div>
-          {personalExperience.map((experience) => {
-            return (
-              <ExperienceCard
-                key={experience.title}
-                image={experience.image}
-                title={experience.title}
-                body={experience.body}
-                link={experience.link}
-              />
-            );
-          })}
+        <div id="personal-experience" className="flex flex-col gap-16 pt-16">
+          <h1 className="text-center text-[300%] font-bold">
+            Personal Experience
+          </h1>
+          <div>
+            {personalExperience.map((experience) => {
+              return (
+                <ExperienceCard
+                  key={experience.title}
+                  image={experience.image}
+                  title={experience.title}
+                  body={experience.body}
+                  link={experience.link}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
