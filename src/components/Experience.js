@@ -9,10 +9,10 @@ function ExperienceCard(props) {
     return (
       <div
         className="flex lx:flex-row flex-col lx:items-start items-center 
-        lx:gap-16 gap-8 bg-slate-900 p-6 rounded-3xl"
+        lx:gap-16 gap-8 bg-slate-900 p-6"
       >
         <img
-          className="rounded-lg lx:w-[600px] w-[100%] lx:max-h-[314px]"
+          className="lx:w-[600px] w-[100%] lx:max-h-[314px]"
           src={props.image}
           alt=""
         />
@@ -39,8 +39,8 @@ function ExperienceCard(props) {
   }
   if (props.imageSide === "left") {
     return (
-      <div className="flex gap-16 bg-slate-900 p-6 rounded-3xl">
-      <img className="rounded-lg w-[600px] my-auto h-[314px]" src={props.image} alt="" />
+      <div className="flex gap-16 bg-slate-900 p-6">
+      <img className="w-[600px] my-auto h-[314px]" src={props.image} alt="" />
         <div className="flex flex-col">
           <div className="relative flex-grow item">
             <a
@@ -63,7 +63,7 @@ function ExperienceCard(props) {
     )
   }
   return (
-    <div className="flex gap-16 bg-slate-900 p-6 rounded-3xl">
+    <div className="flex gap-16 bg-slate-900 p-6">
       <div className="flex flex-col">
         <div className="relative flex-grow item">
           <a
@@ -82,7 +82,7 @@ function ExperienceCard(props) {
           </button>
         )}
       </div>
-      <img className="rounded-lg w-[600px] my-auto h-[314px]" src={props.image} alt="" />
+      <img className="w-[600px] my-auto h-[314px]" src={props.image} alt="" />
     </div>
   );
 }

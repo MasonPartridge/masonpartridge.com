@@ -15,7 +15,7 @@ export default function LandingPage() {
   return (
     <div>
       <div className="bg-gray-950 flex flex-col items-center w-[100%] h-[100%] font-tech overflow-hidden">
-        <div className="text-white z-50 fixed bg-black px-4 w-[100%] justify-center flex gap-4 text-lg">
+        <div className="text-white z-50 fixed bg-primary px-4 w-[100%] justify-center flex gap-4 text-lg">
           <a className="hover:font-bold" href="#home">
             Home
           </a>
@@ -37,7 +37,7 @@ export default function LandingPage() {
           className="w-[100%] h-[100vh] flex xl:flex-row flex-col justify-center xl:gap-16 gap-4 items-center"
         >
           <img
-            className={`${isMobile ? 'absolute top-[25%]' : 'relative'} rounded-full h-64 w-64`}
+            className={`${isMobile ? 'absolute top-[25%]' : 'relative'} h-64 w-64`}
             src={MeImage}
             alt="logo"
           />

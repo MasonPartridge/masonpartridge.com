@@ -90,7 +90,7 @@ export default function Skills() {
                     className="embla__slide mx-1"
                   >
                     <img
-                      className="bg-white w-[100%] h-[100%] rounded-full object-contain"
+                      className="bg-white w-[100%] h-[100%] object-contain"
                       src={skill.image}
                       alt="logo"
                     />
