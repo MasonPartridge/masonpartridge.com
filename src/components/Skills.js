@@ -11,6 +11,11 @@ import ExpressLogo from "@picture/skill_logos/Express.png";
 import TailwindLogo from "@picture/skill_logos/Tailwind.png";
 import WebpackLogo from "@picture/skill_logos/Webpack.png";
 import MongoDBLogo from "@picture/skill_logos/MongoDB.png";
+import GithubLogo from "@picture/skill_logos/Github.png";
+import GitLogo from "@picture/skill_logos/Git.png";
+import TypescriptLogo from "@picture/skill_logos/Typescript.png";
+import NPMLogo from "@picture/skill_logos/NPM.png";
+import NextJSLogo from "@picture/skill_logos/NextJS.png";
 
 export default function Skills() {
   const skills = [
@@ -50,6 +55,26 @@ export default function Skills() {
       image: MongoDBLogo,
       link: "https://www.mongodb.com/",
     },
+    {
+      image: GithubLogo,
+      link: "https://github.com/MasonPartridge",
+    },
+    {
+      image: GitLogo,
+      link: "https://git-scm.com/",
+    },
+    {
+      image: TypescriptLogo,
+      link: "https://www.typescriptlang.org/",
+    },
+    {
+      image: NPMLogo,
+      link: "https://www.npmjs.com/",
+    },
+    {
+      image: NextJSLogo,
+      link: "https://nextjs.org/",
+    }
   ];
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -66,18 +91,18 @@ export default function Skills() {
   }, [emblaApi]);
 
   return (
-    <div className="bg-gradient-to-b from-secondary to-primary w-[100%] flex justify-center">
+    <div className="bg-gradient-to-b from-secondary to-primary w-[100%] flex justify-center px-14">
       <div
-        className="lg:max-w-[90%] flex flex-col gap-8 justify-center w-[100%] items-center py-32 text-white px-8 xl:px-32"
+        className="flex flex-col gap-8 justify-center w-[100%] max-w-screen-xl items-center py-32 text-white px-8"
         id="skills"
       >
         <h1 className="text-[300%] font-bold">Skills</h1>
-        <div className="w-[100%] gap-8 justify-center flex">
+        <div className="w-[100%] gap-1 justify-center flex">
           <button
             className="embla__next border-white w-[42px]"
             onClick={scrollPrev}
           >
-            <i className="fa-solid text-white fa-caret-right fa-flip-horizontal w-[2vw] hover:text-[2vw]"></i>
+            <i className="fa-solid text-white fa-caret-right fa-flip-horizontal w-2 hover:text-[2vw]"></i>
           </button>
           <div className="embla" ref={emblaRef}>
             <div className="embla__container">
@@ -87,10 +112,10 @@ export default function Skills() {
                     target="_blank"
                     key={skill.link}
                     href={skill.link}
-                    className="embla__slide mx-1"
+                    className="embla__slide mx-1 border border-white p-1 border-dashed"
                   >
                     <img
-                      className="bg-white w-[100%] h-[100%] object-contain"
+                      className="w-[100%] h-[100%] object-contain"
                       src={skill.image}
                       alt="logo"
                     />

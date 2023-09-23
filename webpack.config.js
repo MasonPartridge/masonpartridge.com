@@ -25,6 +25,7 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "index.html",
+      favicon: "./public/pictures/IMG_7169.jpg",
     }),
     new CnameWebpackPlugin({
       domain: 'www.masonpartridge.com',
