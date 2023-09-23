@@ -9,7 +9,7 @@ function ExperienceCard(props) {
     return (
       <div
         className="flex lx:flex-row flex-col lx:items-start items-center 
-        lx:gap-16 gap-8 bg-slate-900 p-6"
+        lx:gap-16 gap-8 p-6"
       >
         <img
           className="lx:w-[600px] w-[100%] lx:max-h-[314px]"
@@ -21,7 +21,7 @@ function ExperienceCard(props) {
             <a
               href={props.link}
               target="_blank"
-              className="text-[200%] text-blue-400"
+              className="text-[200%] text-highlight"
             >
               {props.title}
             </a>
@@ -29,7 +29,7 @@ function ExperienceCard(props) {
             {/* <div className="bg-gradient-to-t from-gray-900 absolute bottom-0 w-[100%] h-[30%]"></div> */}
           </div>
           {props.isMobile && (
-            <button className="font-bold text-blue-400 pt-2 text-left">
+            <button className="font-bold text-highlight pt-2 text-left">
               Learn More
             </button>
           )}
@@ -39,14 +39,14 @@ function ExperienceCard(props) {
   }
   if (props.imageSide === "left") {
     return (
-      <div className="flex gap-16 bg-slate-900 p-6">
+      <div className="flex gap-16 p-6">
       <img className="w-[600px] my-auto h-[314px]" src={props.image} alt="" />
         <div className="flex flex-col">
           <div className="relative flex-grow item">
             <a
               href={props.link}
               target="_blank"
-              className="md:text-[150%] text-blue-400"
+              className="md:text-[150%] text-highlight"
             >
               {props.title}
             </a>
@@ -54,7 +54,7 @@ function ExperienceCard(props) {
             {/* <div className="bg-gradient-to-t from-gray-900 absolute bottom-0 w-[100%] h-[30%]"></div> */}
           </div>
           {props.isMobile && (
-            <button className="font-bold text-blue-400 pt-2 text-left">
+            <button className="font-bold text-highlight pt-2 text-left">
               Learn More
             </button>
           )}
@@ -63,13 +63,13 @@ function ExperienceCard(props) {
     )
   }
   return (
-    <div className="flex gap-16 bg-slate-900 p-6">
+    <div className="flex gap-16 p-6">
       <div className="flex flex-col">
         <div className="relative flex-grow item">
           <a
             href={props.link}
             target="_blank"
-            className="md:text-[150%] text-blue-400"
+            className="md:text-[150%] text-highlight"
           >
             {props.title}
           </a>
@@ -77,7 +77,7 @@ function ExperienceCard(props) {
           {/* <div className="bg-gradient-to-t from-gray-900 absolute bottom-0 w-[100%] h-[30%]"></div> */}
         </div>
         {props.isMobile && (
-          <button className="font-bold text-blue-400 pt-2 text-left">
+          <button className="font-bold text-highlight pt-2 text-left">
             Learn More
           </button>
         )}
@@ -135,7 +135,7 @@ export default function Experience() {
   ];
 
   return (
-    <div className="bg-slate-800 w-[100%] flex justify-center">
+    <div className="bg-primary w-[100%] flex justify-center">
       <div
         className="lg:max-w-[80%] px-16 py-32 text-white flex flex-col
           items-center "

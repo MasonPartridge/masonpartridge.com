@@ -26,9 +26,11 @@ module.exports = {
         handjet: ["Handjet", "cursive"],
       },
       colors: {
-        primary: "rbg(0, 0, 0)",
-        secondary: "#1F2937",
-        tertiary: "#4B5563",
+        primary: "#070707",
+        secondary: "#333333", 
+        accent: "#FF5733",
+        highlight: "#FFBF00",
+        textUI: "#708090"
       },
     },
   },
