@@ -34,12 +34,12 @@ export default function LandingPage() {
         </div>
         <div
           id="home"
-          className="w-[100%] h-[100vh] bg-secondary flex xl:flex-row flex-col justify-center xl:gap-16 gap-4 items-center"
+          className="w-[100%] h-[100vh] flex xl:flex-row flex-col justify-center xl:gap-16 gap-4 items-center"
         >
           <div className="text-white mt-32">
             <h1 className="xl:text-[6vw] text-[5vw]">Mason Edward Partridge </h1>
             <h1>
-              Occupation: <b className="text-lg text-highlight">Web Developer</b>
+              Occupation: <b className="text-lg text-highlight">Full Stack Web Developer</b>
             </h1>
             <h1>Identification: MASON EDWARD PARTRIDGE</h1>
             <h2>Nickname: SudoNoun</h2>

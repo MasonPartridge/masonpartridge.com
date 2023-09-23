@@ -91,12 +91,12 @@ export default function Skills() {
   }, [emblaApi]);
 
   return (
-    <div className="bg-gradient-to-b from-secondary to-primary w-[100%] flex justify-center px-14">
+    <div className="w-[100%] flex justify-center px-14">
       <div
         className="flex flex-col gap-8 justify-center w-[100%] max-w-screen-xl items-center py-32 text-white px-8"
         id="skills"
       >
-        <h1 className="text-[300%] font-bold">Skills</h1>
+        <h1 className="text-[300%] font-bold">Skills & Expertise</h1>
         <div className="w-[100%] gap-1 justify-center flex">
           <button
             className="embla__next border-white w-[42px]"
@@ -112,7 +112,7 @@ export default function Skills() {
                     target="_blank"
                     key={skill.link}
                     href={skill.link}
-                    className="embla__slide mx-1 border border-white p-1 border-dashed"
+                    className="embla__slide mx-3 border border-white p-1 border-dashed"
                   >
                     <img
                       className="w-[100%] h-[100%] object-contain"
