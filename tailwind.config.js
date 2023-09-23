@@ -25,6 +25,11 @@ module.exports = {
         tech: ["Share Tech Mono", "monospace"],
         handjet: ["Handjet", "cursive"],
       },
+      colors: {
+        primary: "rbg(0, 0, 0)",
+        secondary: "#1F2937",
+        tertiary: "#4B5563",
+      },
     },
   },
   plugins: [],
