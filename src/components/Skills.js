@@ -66,7 +66,7 @@ export default function Skills() {
   }, [emblaApi]);
 
   return (
-    <div className="w-[100%] flex justify-center">
+    <div className="bg-gradient-to-b from-secondary to-primary w-[100%] flex justify-center">
       <div
         className="lg:max-w-[90%] flex flex-col gap-8 justify-center w-[100%] items-center py-32 text-white px-8 xl:px-32"
         id="skills"

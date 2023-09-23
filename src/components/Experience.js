@@ -9,10 +9,10 @@ function ExperienceCard(props) {
     return (
       <div
         className="flex lx:flex-row flex-col lx:items-start items-center 
-        lx:gap-16 gap-8 p-6"
+        lx:gap-16 gap-8 p-6 border-white border-2"
       >
         <img
-          className="lx:w-[600px] w-[100%] lx:max-h-[314px]"
+          className="lx:w-[600px] w-[100%] lx:max-h-[314px] shadow-2xl shadow-black"
           src={props.image}
           alt=""
         />
@@ -40,7 +40,11 @@ function ExperienceCard(props) {
   if (props.imageSide === "left") {
     return (
       <div className="flex gap-16 p-6">
-      <img className="w-[600px] my-auto h-[314px]" src={props.image} alt="" />
+        <img
+          className="w-[600px] my-auto shadow-2xl h-[314px] shadow-black "
+          src={props.image}
+          alt=""
+        />
         <div className="flex flex-col">
           <div className="relative flex-grow item">
             <a
@@ -60,7 +64,7 @@ function ExperienceCard(props) {
           )}
         </div>
       </div>
-    )
+    );
   }
   return (
     <div className="flex gap-16 p-6">
@@ -82,7 +86,11 @@ function ExperienceCard(props) {
           </button>
         )}
       </div>
-      <img className="w-[600px] my-auto h-[314px]" src={props.image} alt="" />
+      <img
+        className="w-[600px] my-auto shadow-2xl h-[314px] shadow-black"
+        src={props.image}
+        alt=""
+      />
     </div>
   );
 }
@@ -129,9 +137,8 @@ export default function Experience() {
     I used html, css, and javascript for the frontend and am using Github Pages for hosting.`,
       image: PadserThumbnail,
       imageSide: "left",
-      link: "https://masonpartridge.github.io/Padser-SketchPad/"
-    }
-  
+      link: "https://masonpartridge.github.io/Padser-SketchPad/",
+    },
   ];
 
   return (
@@ -141,9 +148,9 @@ export default function Experience() {
           items-center "
       >
         <div className="flex flex-col gap-16">
-          <h1 className="text-center text-[300%] font-bold">
-            Professional Experience
-          </h1>
+            <h1 className="text-[300%] font-bold text-center">
+              Professional Experience
+            </h1>
           <div id="professional-experience">
             {professionalExperience.map((experience) => {
               return (

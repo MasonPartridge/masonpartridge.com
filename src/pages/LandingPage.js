@@ -34,13 +34,8 @@ export default function LandingPage() {
         </div>
         <div
           id="home"
-          className="w-[100%] h-[100vh] flex xl:flex-row flex-col justify-center xl:gap-16 gap-4 items-center"
+          className="w-[100%] h-[100vh] bg-secondary flex xl:flex-row flex-col justify-center xl:gap-16 gap-4 items-center"
         >
-          <img
-            className={`${isMobile ? 'absolute top-[25%]' : 'relative'} h-64 w-64`}
-            src={MeImage}
-            alt="logo"
-          />
           <div className="text-white mt-32">
             <h1 className="xl:text-[6vw] text-[5vw]">Mason Edward Partridge </h1>
             <h1>
