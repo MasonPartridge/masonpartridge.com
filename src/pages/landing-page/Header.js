@@ -6,13 +6,13 @@ export default function Header(props) {
     return (
       <div
         id="home"
-        className="w-[90%] text-white flex flex-col gap-4 tracking-[-0.16em] py-40"
+        className="w-[90%] text-white flex flex-col gap-4 tracking-[-0.16em] py-64 max-w-screen-sm leading-none"
       >
-        <h1 className="text-6xl">Mason</h1>
-        <h1 className="text-center text-6xl">Partridge</h1>
+        <h1 className="text-[400%]">Mason</h1>
+        <h1 className="text-center text-[400%]">Partridge</h1>
         <div className="flex justify-end">
           {" "}
-          <span className="text-right text-4xl bg-primary">Web Developer</span>
+          <span className="text-right text-[250%] bg-primary">Web Developer</span>
         </div>
       </div>
     );

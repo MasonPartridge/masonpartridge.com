@@ -1,15 +1,21 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Skills from "./Skills";
 import Experience from "./Experience";
 import Header from "./Header";
 
 export default function LandingPage() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
 
   useEffect(() => {
-    if (window.innerWidth < 1024) {
-      setIsMobile(true);
+    function handleScreenChange() {
+      if (window.innerWidth < 640) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
     }
+    window.addEventListener("resize", handleScreenChange);
+    return () => window.removeEventListener("resize", handleScreenChange);
   }, []);
 
   return (
@@ -32,9 +38,10 @@ export default function LandingPage() {
             Contact Me
           </a>
         </div>
-        <Header isMobile={isMobile}/>
+        <Header isMobile={isMobile} />
+        {isMobile && <hr className="w-[90%] border-4 border-secondary" />}
         <Skills />
-        <Experience isMobile={isMobile}/>
+        <Experience isMobile={isMobile} />
         <div className="flex justify-center bg-secondary w-full">
           <div
             id="contact-me"
@@ -42,9 +49,12 @@ export default function LandingPage() {
           >
             <h1 className="text-[300%]">Contact Me:</h1>
             <p className="text-[150%]">
-              If you need a website made quickly and for cheap I can assist! I am
-              only an email away:{" "}
-              <a className="text-highlight" href="mailto: masonepartridge@gmail.com">
+              If you need a website made quickly and for cheap I can assist! I
+              am only an email away:{" "}
+              <a
+                className="text-highlight"
+                href="mailto: masonepartridge@gmail.com"
+              >
                 masonepartridge@gmail.com
               </a>
             </p>
