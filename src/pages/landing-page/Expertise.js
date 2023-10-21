@@ -35,7 +35,7 @@ export default function Expertise() {
               proficient in HTML5, CSS3, and JavaScript.
             </p>
           </div>
-          <div className="border-l-[10px] p-4 flex-col flex justify-between flex-1 h-44">
+          <div className="border-l-[10px] border-primary p-4 flex-col flex justify-between flex-1 h-44">
             <p className="text-sm">
               Play doesn’t just help us to explore what is essential. It is
               essential in and of itself.

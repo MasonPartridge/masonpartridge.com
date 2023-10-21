@@ -142,7 +142,7 @@ export default function Experience() {
   ];
 
   return (
-    <div className="bg-primary w-[100%] flex justify-center">
+    <div className="w-[100%] flex justify-center">
       <div
         className="lg:max-w-[80%] px-16 py-32 text-white flex flex-col
           items-center "
