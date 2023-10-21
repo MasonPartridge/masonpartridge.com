@@ -23,13 +23,13 @@ export default function Header(props) {
   return (
     <div
       id="home"
-      className="w-[100%] h-[100vh] flex xl:flex-row flex-col justify-center xl:gap-16 gap-4 items-center max-w-screen-2xl px-32"
+      className="w-[100%] h-[100vh] flex xl:flex-row flex-col justify-center gap-16 items-center max-w-screen-2xl px-32 leading-none"
     >
-      <div className="text-white mt-32 w-full">
-        <h1 className="xl:text-[6vw]">Mason Edward Partridge </h1>
+      <div className="text-white mt-32 w-full gap-4 flex flex-col">
+        <h1 className="lg:text-[6vw] text-[5.7vw] 2xl:text-8xl">Mason Edward Partridge</h1>
         <h1 className="text-2xl">
           Occupation:{" "}
-          <b className="relative bg-primary text-[150%] text-highlight z-20">
+          <b className="relative bg-primary text-[3vw] text-highlight z-20">
             Full Stack Web Developer
           </b>
         </h1>
