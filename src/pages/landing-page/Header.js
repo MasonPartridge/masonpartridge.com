@@ -6,13 +6,15 @@ export default function Header(props) {
     return (
       <div
         id="home"
-        className="w-[90%] text-white flex flex-col gap-4 tracking-[-0.16em] py-64 max-w-screen-sm leading-none"
+        className="w-[90%] text-white flex flex-col gap-4 tracking-[-0.16em] py-64 max-w-md leading-none"
       >
         <h1 className="text-[400%]">Mason</h1>
         <h1 className="text-center text-[400%]">Partridge</h1>
         <div className="flex justify-end">
           {" "}
-          <span className="text-right text-[250%] bg-primary">Web Developer</span>
+          <span className="text-right text-[250%] bg-primary">
+            Web Developer
+          </span>
         </div>
       </div>
     );
@@ -21,13 +23,13 @@ export default function Header(props) {
   return (
     <div
       id="home"
-      className="w-[100%] h-[100vh] flex xl:flex-row flex-col justify-center xl:gap-16 gap-4 items-center"
+      className="w-[100%] h-[100vh] flex xl:flex-row flex-col justify-center xl:gap-16 gap-4 items-center max-w-screen-2xl px-32"
     >
-      <div className="text-white mt-32">
-        <h1 className="xl:text-[6vw] text-[5vw]">Mason Edward Partridge </h1>
+      <div className="text-white mt-32 w-full">
+        <h1 className="xl:text-[6vw]">Mason Edward Partridge </h1>
         <h1 className="text-2xl">
           Occupation:{" "}
-          <b className="relative bg-primary text-4xl text-highlight z-20">
+          <b className="relative bg-primary text-[150%] text-highlight z-20">
             Full Stack Web Developer
           </b>
         </h1>
