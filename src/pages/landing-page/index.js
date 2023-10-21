@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
-import MeImage from "@picture/Me.png";
-import Skills from "../components/Skills";
-import Experience from "../components/Experience";
+import Skills from "./Skills";
+import Experience from "./Experience";
 
 export default function LandingPage() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
