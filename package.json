@@ -1,7 +1,7 @@
 {
-  "name": "my-webpack-project",
+  "name": "mason-partridge-website",
   "version": "3.0.0",
-  "description": "My webpack project",
+  "description": "My portfolio website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

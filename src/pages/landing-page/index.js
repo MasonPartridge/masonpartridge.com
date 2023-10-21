@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Skills from "./Skills";
 import Experience from "./Experience";
+import Header from "./Header";
 
 export default function LandingPage() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
@@ -13,7 +14,7 @@ export default function LandingPage() {
 
   return (
     <div>
-      <div className="bg-primary flex flex-col items-center w-[100%] h-[100%] font-tech overflow-hidden">
+      <div className="bg-background flex flex-col items-center w-[100%] h-[100%] font-tech overflow-hidden">
         <div className="text-white z-50 fixed bg-primary px-4 w-[100%] justify-center flex gap-4 text-lg">
           <a className="hover:font-bold" href="#home">
             Home
@@ -31,19 +32,7 @@ export default function LandingPage() {
             Contact Me
           </a>
         </div>
-        <div
-          id="home"
-          className="w-[100%] h-[100vh] flex xl:flex-row flex-col justify-center xl:gap-16 gap-4 items-center"
-        >
-          <div className="text-white mt-32">
-            <h1 className="xl:text-[6vw] text-[5vw]">Mason Edward Partridge </h1>
-            <h1>
-              Occupation: <b className="text-lg text-highlight">Full Stack Web Developer</b>
-            </h1>
-            <h1>Identification: MASON EDWARD PARTRIDGE</h1>
-            <h2>Nickname: SudoNoun</h2>
-          </div>
-        </div>
+        <Header isMobile={isMobile}/>
         <Skills />
         <Experience isMobile={isMobile}/>
         <div className="flex justify-center bg-secondary w-full">
