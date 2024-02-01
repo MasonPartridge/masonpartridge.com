@@ -93,7 +93,7 @@ export default function Skills() {
   return (
     <div className="w-[100%] flex justify-center ">
       <div
-        className="flex flex-col gap-8 justify-center w-[100%] max-w-screen-xl items-center py-32 text-white"
+        className="flex flex-col gap-8 justify-center w-[100%] items-center py-32 text-white"
         id="skills"
       >
         <h1 className="text-[300%] font-bold">Skills & Expertise</h1>

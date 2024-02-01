@@ -23,7 +23,7 @@ export default function Header(props) {
   return (
     <div
       id="home"
-      className="h-[100vh] flex flex-col justify-center gap-16 items-start max-w-screen-lg leading-none"
+      className="h-[100vh] flex flex-col justify-center gap-16 items-start leading-none"
     >
       <div className="text-white mt-32 w-full gap-4 2xl:gap-8 flex flex-col">
         <h1 className="lg:text-[6vw] text-[5vw] 2xl:text-8xl">Mason Edward Partridge</h1>
