@@ -20,8 +20,8 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div>
-      <div className="bg-background flex flex-col items-center w-[100%] h-[100%] font-tech overflow-hidden">
+    <div className="font-tech overflow-hidden">
+      <div className="bg-background flex flex-col items-center w-[100%] px-16 h-[100%]">
         <div className="text-white z-50 fixed bg-primary px-4 w-[100%] justify-center flex gap-4 text-lg">
           <a className="hover:font-bold" href="#home">
             Home
@@ -44,37 +44,45 @@ export default function LandingPage() {
         <Expertise />
         <Skills />
         <Experience isMobile={isMobile} />
-        <div className="flex justify-center bg-secondary w-full">
-          <div
-            id="contact-me"
-            className="text-white flex flex-col gap-2 p-32 py-32"
-          >
-            <h1 className="text-[300%]">Contact Me:</h1>
-            <p className="text-[150%]">
-              If you need a website made quickly and for cheap I can assist! I
-              am only an email away:{" "}
-              <a
-                className="text-highlight"
-                href="mailto: masonepartridge@gmail.com"
-              >
-                masonepartridge@gmail.com
-              </a>
-            </p>
-            <div className="flex items-center gap-4 text-lg">
-              <a href="https://www.linkedin.com/in/mason-partridge-a828a1246/">
-                <i className="fa-brands fa-linkedin text-white"></i>
-              </a>
-              <a href="https://github.com/MasonPartridge">
-                <i className="fa-brands fa-github"></i>
-              </a>
-              <a href="mailto: masonepartridge@gmail.com">
-                <i className="fa-solid fa-envelope text-white"></i>
-              </a>
-              <p>Phone: +1 (209) 535-7036</p>
-            </div>
-          </div>
-        </div>
       </div>
+      <Footer />
     </div>
   );
 }
+
+function Footer() {
+  return (
+    <div className="flex justify-center bg-secondary w-full">
+      <div
+        id="contact-me"
+        className="text-white flex flex-col gap-2 p-32 py-32"
+      >
+        <h1 className="text-[300%]">Contact Me:</h1>
+        <p className="text-[150%]">
+          If you need a website made quickly and for cheap I can assist! I
+          am only an email away:{" "}
+          <a
+            className="text-highlight"
+            href="mailto: masonepartridge@gmail.com"
+          >
+            masonepartridge@gmail.com
+          </a>
+        </p>
+        <div className="flex items-center gap-4 text-lg">
+          <a href="https://www.linkedin.com/in/mason-partridge-a828a1246/">
+            <i className="fa-brands fa-linkedin text-white"></i>
+          </a>
+          <a href="https://github.com/MasonPartridge">
+            <i className="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto: masonepartridge@gmail.com">
+            <i className="fa-solid fa-envelope text-white"></i>
+          </a>
+          <p>Phone: +1 (209) 535-7036</p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+

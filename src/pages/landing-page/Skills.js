@@ -91,9 +91,9 @@ export default function Skills() {
   }, [emblaApi]);
 
   return (
-    <div className="w-[100%] flex justify-center px-14">
+    <div className="w-[100%] flex justify-center ">
       <div
-        className="flex flex-col gap-8 justify-center w-[100%] max-w-screen-xl items-center py-32 text-white px-8"
+        className="flex flex-col gap-8 justify-center w-[100%] max-w-screen-xl items-center py-32 text-white"
         id="skills"
       >
         <h1 className="text-[300%] font-bold">Skills & Expertise</h1>

@@ -9,7 +9,7 @@ function ExperienceCard(props) {
     return (
       <div
         className="flex lx:flex-row flex-col lx:items-start items-center 
-        lx:gap-16 gap-8 p-6 border-white border-2"
+        lx:gap-16 gap-8 py-6"
       >
         <img
           className="lx:w-[600px] w-[100%] lx:max-h-[314px] shadow-2xl shadow-black"
@@ -39,7 +39,7 @@ function ExperienceCard(props) {
   }
   if (props.imageSide === "left") {
     return (
-      <div className="flex gap-16 p-6">
+      <div className="flex gap-16 py-6">
         <img
           className="w-[600px] my-auto shadow-2xl h-[314px] shadow-black "
           src={props.image}
@@ -67,7 +67,7 @@ function ExperienceCard(props) {
     );
   }
   return (
-    <div className="flex gap-16 p-6">
+    <div className="flex gap-16 py-6">
       <div className="flex flex-col">
         <div className="relative flex-grow item">
           <a
@@ -144,7 +144,7 @@ export default function Experience() {
   return (
     <div className="w-[100%] flex justify-center">
       <div
-        className="lg:max-w-[80%] px-16 py-32 text-white flex flex-col
+        className="lg:max-w-[80%] py-32 text-white flex flex-col
           items-center "
       >
         <div className="flex flex-col gap-16">
