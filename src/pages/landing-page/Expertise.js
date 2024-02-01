@@ -13,8 +13,8 @@ export default function Expertise() {
         <div className="bg-primary p-6 flex flex-col gap-8 max-w-[40%]">
           <h1 className="text-[300%]">Frontend Dev</h1>
           <p>
-            I craft dynamic and user-friendly web interfaces using the React.js
-            and Next.js. Designing and building interactive components, managing
+            I craft dynamic and user-friendly web interfaces using the React.js, Webpack, Tailwind,
+            and am comfortable in frameworks such as Next.js. Designing and building interactive components, managing
             data flow, and ensuring a smooth and engaging user experience is my
             passion!
           </p>
@@ -23,16 +23,16 @@ export default function Expertise() {
           <h1 className="text-[250%]">Backend Dev</h1>
           <p>
             I build and maintain backend services using Node.js and Express.js.
-            I am proficient in RESTful API design and implementation, and I am
-            familiar with SQL and NoSQL databases.
+            I am proficient in RESTful API design and implementation and
+            familiar with SQL and NoSQL databases, with hands on experience with 
+            MongoDB and Vercel Postgres.
           </p>
         </div>
         <div className="flex flex-col gap-8">
           <div className="bg-secondary p-8 flex flex-col gap-8 flex-1 h-44 text-sm">
             <h1 className="text-[150%]">UI/UX Design</h1>
             <p>
-              I create clean and modern UIs using Figma and Adobe XD. I am
-              proficient in HTML5, CSS3, and JavaScript.
+              I create clean and modern UIs utilizing Figma. 
             </p>
           </div>
           <div className="border-l-[10px] border-primary p-4 flex-col flex justify-between flex-1 h-44">
