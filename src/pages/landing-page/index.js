@@ -21,24 +21,8 @@ export default function LandingPage() {
 
   return (
     <div className="font-tech overflow-hidden">
+      <NavigationBar />
       <div className="bg-background flex flex-col items-center w-[100%] px-16 h-[100%]">
-        <div className="text-white z-50 fixed bg-primary px-4 w-[100%] justify-center flex gap-4 text-lg">
-          <a className="hover:font-bold" href="#home">
-            Home
-          </a>
-          <a className="hover:font-bold" href="#skills">
-            Skills
-          </a>
-          <a className="hover:font-bold" href="#professional-experience">
-            Professional Experience
-          </a>
-          <a className="hover:font-bold" href="#personal-experience">
-            Personal Experience
-          </a>
-          <a className="hover:font-bold" href="#contact-me">
-            Contact Me
-          </a>
-        </div>
         <Header isMobile={isMobile} />
         {isMobile && <hr className="w-[90%] border-4 border-secondary" />}
         <Expertise />
@@ -48,6 +32,28 @@ export default function LandingPage() {
       <Footer />
     </div>
   );
+}
+
+function NavigationBar() {
+  return (
+    <div className="text-white z-50 fixed bg-primary px-4 w-[100%] justify-center flex gap-4 text-lg">
+      <a className="hover:font-bold" href="#home">
+        Home
+      </a>
+      <a className="hover:font-bold" href="#skills">
+        Skills
+      </a>
+      <a className="hover:font-bold" href="#professional-experience">
+        Professional Experience
+      </a>
+      <a className="hover:font-bold" href="#personal-experience">
+        Personal Experience
+      </a>
+      <a className="hover:font-bold" href="#contact-me">
+        Contact Me
+      </a>
+    </div>
+  )
 }
 
 function Footer() {
