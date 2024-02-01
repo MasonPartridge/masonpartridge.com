@@ -20,9 +20,9 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div className="font-tech overflow-hidden bg-background">
+    <div className="font-tech overflow-hidden bg-background flex flex-col items-center">
       <NavigationBar />
-      <div className="max-w-screen-xls flex flex-col items-start w-[100%] px-16 h-[100%]">
+      <div className="max-w-screen-xl flex flex-col items-start w-[100%] px-16 h-[100%]">
         <Header isMobile={isMobile} />
         {isMobile && <hr className="w-[90%] border-4 border-secondary" />}
         <Expertise />
