@@ -4,7 +4,7 @@ export default function Expertise() {
   return (
     <div
       id="expertise"
-      className="h-screen flex gap-32 flex-col justify-center items-center w-full px-8 lg:px-0 text-text max-w-screen-lg"
+      className="lg:h-screen flex gap-32 flex-col justify-center items-center w-full px-8 lg:px-0 text-text max-w-screen-xl"
     >
       <h1 className="text-4xl lg:text-5xl font-bold w-full">
         01.<b className="text-5xl lg:text-6xl">Expertise</b>
