@@ -16,6 +16,7 @@ const config = {
     alias: {
       '@picture': path.resolve(__dirname, "./public/pictures"),
       '@styles': path.resolve(__dirname, "./public/styles"),
+      '@components': path.resolve(__dirname, "./src/components"),
     },
   },
   devServer: {
