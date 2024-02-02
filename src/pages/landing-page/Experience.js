@@ -127,7 +127,7 @@ export default function Experience() {
        and some of the login and signup page Frontend.`,
       image: ClubsiteThumbnail,
       imageSide: "center",
-      link: "https://github.com/MasonPartridge",
+      link: "https://club-website-two.vercel.app/",
     },
   ];
   const personalExperience = [
