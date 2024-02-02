@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import CommunityAliThumbnail from "@picture/CommunityAliThumbnail.png";
 import ProfilioThumbnail from "@picture/ProfilioThumbnail.png";
 import PadserThumbnail from "@picture/PadserThumbnail.png";
+import ClubsiteThumbnail from "@picture/club-website.png";
 
 function ExperienceCard(props) {
   if (props.imageSide === "center" || props.isMobile) {
@@ -21,7 +22,7 @@ function ExperienceCard(props) {
             <a
               href={props.link}
               target="_blank"
-              className="text-[200%] text-highlight"
+              className="text-[200%] text-highlight text-accent"
             >
               {props.title}
             </a>
@@ -50,7 +51,7 @@ function ExperienceCard(props) {
             <a
               href={props.link}
               target="_blank"
-              className="md:text-[150%] text-highlight"
+              className="md:text-[150%] text-highlight text-accent"
             >
               {props.title}
             </a>
@@ -73,7 +74,7 @@ function ExperienceCard(props) {
           <a
             href={props.link}
             target="_blank"
-            className="md:text-[150%] text-highlight"
+            className="md:text-[150%] text-highlight text-accent"
           >
             {props.title}
           </a>
@@ -120,13 +121,11 @@ export default function Experience() {
       link: "https://www.communityali.org/",
     },
     {
-      title: "Profilio Website",
-      body: `I worked on this website as a way to showcase my skills and experience
-    as a web developer. I used React.js, tailwindcss, and Webpack for frontend 
-    and am using Github Pages for hosting. The most challenging part of this project
-    was the implementing the carocell component, a component that allows you to scroll
-    through all the technologies I have experience with.`,
-      image: ProfilioThumbnail,
+      title: "MJC Club Application Website",
+      body: `A website to handle club applications and renewal for MJC,
+       I worked mainly on the form Frontend and some Backend, technical form Backend, 
+       and some of the login and signup page Frontend.`,
+      image: ClubsiteThumbnail,
       imageSide: "center",
       link: "https://github.com/MasonPartridge",
     },
