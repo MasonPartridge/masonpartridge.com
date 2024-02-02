@@ -96,7 +96,7 @@ function ExperienceCard(props) {
 }
 
 export default function Experience() {
-  const professionalExperience = [
+  const products = [
     {
       title: "Community Ali - Full Stack Web Developer",
       body: `I worked as a full stack web developer for Community Ali, 
@@ -118,6 +118,17 @@ export default function Experience() {
       image: CommunityAliThumbnail,
       imageSide: "center",
       link: "https://www.communityali.org/",
+    },
+    {
+      title: "Profilio Website",
+      body: `I worked on this website as a way to showcase my skills and experience
+    as a web developer. I used React.js, tailwindcss, and Webpack for frontend 
+    and am using Github Pages for hosting. The most challenging part of this project
+    was the implementing the carocell component, a component that allows you to scroll
+    through all the technologies I have experience with.`,
+      image: ProfilioThumbnail,
+      imageSide: "center",
+      link: "https://github.com/MasonPartridge",
     },
   ];
   const personalExperience = [
@@ -142,17 +153,17 @@ export default function Experience() {
   ];
 
   return (
-    <div className="w-[100%] flex justify-center">
+    <div className="flex justify-center">
       <div
-        className="lg:max-w-[80%] py-32 text-white flex flex-col
+        className="text-white flex gap-16 flex-col
           items-center "
       >
         <div className="flex flex-col gap-16">
-            <h1 className="text-[300%] font-bold text-center">
-              Professional Experience
-            </h1>
-          <div id="professional-experience">
-            {professionalExperience.map((experience) => {
+          <h1 className="text-4xl lg:text-5xl font-bold w-full">
+            03.<b className="text-5xl lg:text-6xl">My Work</b>
+          </h1>
+          <div id="professional-experience" className="flex gap-8">
+            {products.map((experience) => {
               return (
                 <ExperienceCard
                   key={experience.title}
@@ -166,10 +177,7 @@ export default function Experience() {
             })}
           </div>
         </div>
-        <div id="personal-experience" className="flex flex-col gap-16 pt-16">
-          <h1 className="text-center text-[300%] font-bold">
-            Personal Experience
-          </h1>
+        <div id="personal-experience" className="flex flex-col gap-16">
           <div className="flex flex-col gap-16">
             {personalExperience.map((experience) => {
               return (
