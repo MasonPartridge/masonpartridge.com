@@ -101,7 +101,7 @@ export default function Skills() {
       </h1>
         <div className="w-[100%] gap-1 justify-center flex">
           <button
-            className="embla__next border-white w-[42px]"
+            className="embla__next border-white w-[2vw] hover:text-[2vw]"
             onClick={scrollPrev}
           >
             <i className="fa-solid text-white fa-caret-right fa-flip-horizontal w-2 hover:text-[2vw]"></i>
