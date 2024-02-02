@@ -3,6 +3,7 @@ import Skills from "./Skills";
 import Experience from "./Experience";
 import Header from "./Header";
 import Expertise from "./Expertise";
+import NavigationBar from "@components/NavigationBar";
 
 export default function LandingPage() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
@@ -32,33 +33,6 @@ export default function LandingPage() {
       <Footer />
     </div>
   );
-}
-
-function NavigationBar() {
-  return (
-    <div className="text-white z-50 fixed bg-background px-4 border-b-2 p-4
-     border-b-secondary w-[100%] flex justify-center text-lg">
-      <div className="max-w-screen-xl w-full justify-between flex gap-4 ">
-          <a className="hover:font-bold text-xl" href="#home">
-            MASONPARTRIDGE.COM
-          </a>
-        <div className="flex gap-4">
-          <a className="hover:font-bold" href="#skills">
-            Skills
-          </a>
-          <a className="hover:font-bold" href="#professional-experience">
-            Professional Experience
-          </a>
-          <a className="hover:font-bold" href="#personal-experience">
-            Personal Experience
-          </a>
-          <a className="hover:font-bold" href="#contact-me">
-            Contact Me
-          </a>
-        </div>
-      </div>
-    </div>
-  )
 }
 
 function Footer() {
