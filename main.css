@@ -448,6 +448,7 @@ video {
 .font-bold{font-weight:700 !important}
 .leading-none{line-height:1 !important}
 .tracking-\[-0\.16em\]{letter-spacing:-0.16em !important}
+.text-accent{--tw-text-opacity:1 !important;color:rgb(118 118 158 / var(--tw-text-opacity)) !important}
 .text-text{--tw-text-opacity:1 !important;color:rgb(255 255 255 / var(--tw-text-opacity)) !important}
 .text-white{--tw-text-opacity:1 !important;color:rgb(255 255 255 / var(--tw-text-opacity)) !important}
 .shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25) !important;--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color) !important;box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important}
