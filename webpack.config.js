@@ -17,6 +17,7 @@ const config = {
       '@picture': path.resolve(__dirname, "./public/pictures"),
       '@styles': path.resolve(__dirname, "./public/styles"),
       '@components': path.resolve(__dirname, "./src/components"),
+      '@data': path.resolve(__dirname, "./src/data"),
     },
   },
   devServer: {
