@@ -1,6 +1,6 @@
 import React from 'react';
-import Project from "@component/Project";
-import projectData from '@data/projectData';
+import Project from "@components/Project";
+import projectData from '@data/projectData.js';
 
     export default function CommunityAliPage(props) {
 
