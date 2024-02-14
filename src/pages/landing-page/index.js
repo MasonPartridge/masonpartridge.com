@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Skills from "./Skills";
+import Skills from "./Technologies";
 import Experience from "./Experience";
 import Header from "./Header";
 import Expertise from "./Expertise";

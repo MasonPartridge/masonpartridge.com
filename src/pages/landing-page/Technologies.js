@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import Title from "@/components/Title.js";
+import Title from "@components/Title.js";
 
 import CSSLogo from "@picture/skill_logos/CSS.png";
 import HTMLLogo from "@picture/skill_logos/HTML.png";
