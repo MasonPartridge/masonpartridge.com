@@ -1,19 +1,20 @@
 import React from "react";
-import { Router, Route, Switch } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import LandingPage from "./pages/landing-page/index.js";
 import CommunityAliPage from "./pages/projects/communityali/index.js";
-import '@styles/style.css';
+import "@styles/style.css";
 
 export default function App() {
-    return (
-        <Router>
-            <Switch>
-                <Route path="/" component={LandingPage} />
-                <Route path="/projects/communityali" component={CommunityAliPage} />
-            </Switch>
-        </Router>
-    );
+  return (
+    <BrowserRouter>
+      <Routes>
+    <Route path="/" element={<LandingPage/>} />
+        <Route path="/projects/communityali"
+            element={<CommunityAliPage/>} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 createRoot(document.getElementById("root")).render(<App />);
