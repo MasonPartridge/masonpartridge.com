@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Skills from "./Technologies";
+import Technologies from "./Technologies";
 import Experience from "./Experience";
 import Header from "./Header";
 import Expertise from "./Expertise";
@@ -27,7 +27,7 @@ export default function LandingPage() {
         <Header isMobile={isMobile} />
         {isMobile && <hr className="w-[90%] border-4 border-secondary" />}
         <Expertise />
-        <Skills />
+        <Technologies />
         <Experience isMobile={isMobile} />
       </div>
       <Footer />

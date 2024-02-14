@@ -1,6 +1,7 @@
 import React from "react";
 
-export default function Title(prefix, title) {
+export default function Title(props) {
+    const {prefix, title} = props;
   return (
     <h1 className="text-4xl lg:text-5xl font-bold w-full">
       {prefix}

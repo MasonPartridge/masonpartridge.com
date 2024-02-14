@@ -97,9 +97,6 @@ export default function Skills() {
         className="flex flex-col gap-8 justify-center w-[100%] items-center py-32 text-white"
         id="skills"
       >
-      <h1 className="text-4xl lg:text-5xl font-bold w-full">
-        02.<b className="text-5xl lg:text-6xl">Technologies</b>
-      </h1>
       <Title prefix="02." title="Technologies" />
         <div className="w-[100%] gap-1 justify-center flex">
           <button
