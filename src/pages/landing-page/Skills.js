@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import Title from "@/components/Title.js";
 
 import CSSLogo from "@picture/skill_logos/CSS.png";
 import HTMLLogo from "@picture/skill_logos/HTML.png";
@@ -99,6 +100,7 @@ export default function Skills() {
       <h1 className="text-4xl lg:text-5xl font-bold w-full">
         02.<b className="text-5xl lg:text-6xl">Technologies</b>
       </h1>
+      <Title prefix="02." title="Technologies" />
         <div className="w-[100%] gap-1 justify-center flex">
           <button
             className="embla__next border-white w-[2vw] hover:text-[2vw]"

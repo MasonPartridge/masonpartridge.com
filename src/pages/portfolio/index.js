@@ -1,10 +1,12 @@
 import React from 'react';
+import Title from '@/components/Title';
 
-export function PortfolioGallery(){
+export function PortfolioGallery(titlePrefix){
 	return (
 		<div className="flex flex-row">
-			<h1></h1>
+			<Title prefix={titlePrefix} title="Portfolio" />
 		</div>
+    )
 }
 
 export default function ProjectCard(props) {

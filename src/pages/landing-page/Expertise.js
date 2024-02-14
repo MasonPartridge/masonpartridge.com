@@ -1,4 +1,5 @@
 import React from "react";
+import Title from "@/components/Title";
 
 export default function Expertise() {
   return (
@@ -6,9 +7,7 @@ export default function Expertise() {
       id="expertise"
       className="flex gap-16 flex-col justify-center items-center w-full text-text"
     >
-      <h1 className="text-4xl lg:text-5xl font-bold w-full">
-        01.<b className="text-5xl lg:text-6xl">Expertise</b>
-      </h1>
+      <Title prefix="01." title="Expertise" />
       <div className="flex gap-8 lg:flex-row flex-col">
         <div className="bg-primary p-6 flex flex-col gap-8 lg:max-w-[40%]">
           <h1 className="text-[300%]">Frontend Dev</h1>
