@@ -11,7 +11,7 @@ export default function App() {
     <Router>
       <Switch>
         <Route path="/portfolio">
-          <p>Hello World</p>
+          <Portfolio  />
         </Route>
         <Route path="/">
           <LandingPage />
