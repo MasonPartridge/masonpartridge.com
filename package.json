@@ -11,7 +11,7 @@
     "watch": "webpack --watch",
     "serve": "webpack serve --open",
     "postcss": "postcss ./public/styles/style.css -o dist/main.css",
-    "dev": "concurrently \"npm run watch\" \"npm run serve\" \"npm run postcss\" \"npm run nodemon ./src/app.js\"",
+    "dev": "concurrently \"npm run watch\" \"npm run serve\" \"npm run postcss\" \"webpack-dev-server\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
