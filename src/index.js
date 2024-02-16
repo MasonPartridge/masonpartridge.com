@@ -5,10 +5,12 @@ import LandingPage from "./pages/landing-page/index.js";
 import CommunityAliPage from "./pages/portfolio/communityali/index.js";
 import "@styles/style.css";
 import Portfolio from "./pages/portfolio/index.js";
+import NavigationBar from "@components/NavigationBar";
 
 export default function App() {
   return (
     <Router>
+      <NavigationBar />
       <Switch>
         <Route path="/portfolio">
           <Portfolio  />
