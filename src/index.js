@@ -11,14 +11,16 @@ export default function App() {
   return (
     <Router>
       <NavigationBar />
-      <Switch>
-        <Route path="/portfolio">
-          <Portfolio  />
-        </Route>
-        <Route path="/">
-          <LandingPage />
-        </Route>
-      </Switch>
+      <div className="pt-16 bg-background">
+        <Switch>
+          <Route path="/portfolio">
+            <Portfolio  />
+          </Route>
+          <Route path="/">
+            <LandingPage />
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 }

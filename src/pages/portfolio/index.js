@@ -4,7 +4,7 @@ import PortfolioGallery from '@components/PortfolioGallery';
 
 export default function Portfolio(){
     return (
-        <div>
+        <div className='flex flex-col items-center h-screen'>
             <PortfolioGallery titlePrefix="" />
         </div>
     )
