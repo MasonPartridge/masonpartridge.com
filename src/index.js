@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import LandingPage from "./pages/landing-page/index.js";
 import CommunityAliPage from "./pages/portfolio/communityali/index.js";
@@ -8,16 +8,16 @@ import Portfolio from "./pages/portfolio/index.js";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route
-          path="/portfolio"
-          element={<Portfolio/>}
-        />
-        <Route path="/portfolio/communityali" element={<CommunityAliPage />} />
-      </Routes>
-    </BrowserRouter>
+    <Router>
+      <Switch>
+        <Route path="/portfolio">
+          <p>Hello World</p>
+        </Route>
+        <Route path="/">
+          <LandingPage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
