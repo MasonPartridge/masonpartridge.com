@@ -5,6 +5,7 @@ import CommunityAliThumbnail from "@picture/CommunityAliThumbnail.png";
 import ProfilioThumbnail from "@picture/ProfilioThumbnail.png";
 import PadserThumbnail from "@picture/PadserThumbnail.png";
 import ClubsiteThumbnail from "@picture/club-website.png";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const projects = [
   {
@@ -27,6 +28,7 @@ const projects = [
       I worked on this project from 2023-02-01 to current date.`,
     image: CommunityAliThumbnail,
     link: "https://www.communityali.org/",
+    portfolioLink: "communityali",
   },
   {
     title: "MJC Club Application Website",
@@ -35,6 +37,7 @@ const projects = [
        and some of the login and signup page Frontend.`,
     image: ClubsiteThumbnail,
     link: "https://club-website-two.vercel.app/",
+    portfolioLink: "club-website",
   },
   {
     title: "Profilio Website",
@@ -45,6 +48,7 @@ const projects = [
     through all the technologies I have experience with.`,
     image: ProfilioThumbnail,
     link: "https://github.com/MasonPartridge",
+    portfolioLink: "profilio",
   },
   {
     title: "Padser-SketchPad",
@@ -52,6 +56,7 @@ const projects = [
     I used html, css, and javascript for the frontend and am using Github Pages for hosting.`,
     image: PadserThumbnail,
     link: "https://masonpartridge.github.io/Padser-SketchPad/",
+    portfolioLink: "padser-sketchpad",
   },
 ];
 
@@ -70,12 +75,12 @@ export default function PortfolioGallery(props) {
 }
 
 export function ProjectCard(props) {
-  const { title, body, image, link } = props;
+  const { title, body, image, link, portfolioLink } = props;
   return (
     <div className="rounded-lg">
       <img src={image} alt="" />
-      <h1>{title}</h1>
-      <a href={link}>Link</a>
+      <Link to={`/portfolio/${portfolioLink}`} className="text-white">{title}</Link>
+      <a className="font-bold" href={link}>Link</a>
       <hr />
     </div>
   );

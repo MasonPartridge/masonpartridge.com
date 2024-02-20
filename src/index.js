@@ -14,7 +14,7 @@ export default function App() {
       <div className="pt-16 bg-background">
         <Switch>
           <Route path="/portfolio">
-            <Portfolio  />
+            <Portfolio />
           </Route>
           <Route path="/">
             <LandingPage />
