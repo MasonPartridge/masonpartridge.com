@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 export default function NavigationBar() {
   return (
     <div
@@ -6,22 +8,19 @@ export default function NavigationBar() {
        border-b-secondary w-[100%] flex justify-center text-lg"
     >
       <div className="max-w-screen-xl w-full justify-between flex gap-4 font-tech">
-        <a className="hover:font-bold text-xl" href="#home">
+        <a className="hover:font-bold text-xl" href="/">
           MASONPARTRIDGE.COM
         </a>
         <div className="flex gap-4">
-          <a className="hover:font-bold" href="#skills">
-            Skills
-          </a>
-          <a className="hover:font-bold" href="#professional-experience">
-            Professional Experience
-          </a>
-          <a className="hover:font-bold" href="#personal-experience">
-            Personal Experience
-          </a>
-          <a className="hover:font-bold" href="#contact-me">
-            Contact Me
-          </a>
+          <Link className="hover:font-bold text-xl" to={'/'}>
+            HOME
+          </Link>
+          <Link className="hover:font-bold text-xl" to={'/portfolio'}>
+            PORTFOLIO
+          </Link>
+          <Link className="hover:font-bold text-xl" to={'/resume'}>
+            RESUME
+          </Link>
         </div>
       </div>
     </div>
