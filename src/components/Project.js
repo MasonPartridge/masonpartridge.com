@@ -9,23 +9,23 @@ const Project = ({ match }) => {
     <div className="font-tech text-text max-w-screen-lg flex flex-col gap-6">
       <div className="text-2xl flex justify-between">
         <div>
-          <Link to="/" className="text-text hover:text-accent">
+          <Link to="/" className="text-text hover:font-bold">
             {"Home "}
           </Link>
           <span className="text-text">{"> "}</span>
-          <Link to="/portfolio" className="text-white hover:text-accent">
+          <Link to="/portfolio" className="text-white hover:font-bold">
             {"Portfolio "}
           </Link>
           <span className="text-white">{"> "}</span>
-          <Link to={`/portfolio/:${projectId}`} className="text-accent hover:text-primary">
+          <Link to={`/portfolio/:${projectId}`} className="text-accent hover:font-bold">
             {title}
           </Link>
         </div>
-        <a href={link} className="hover:text-accent" target="blank">
+        <a href={link} className=" hover:font-bold" target="blank">
           {"Open Project >"}
         </a>
       </div>
-      <a className="text-6xl hover:text-accent" href={link}>{title}</a>
+      <a className="text-6xl hover:font-bold" href={link}>{title}</a>
       <hr />
       <div className="flex gap-4 overflow-scroll">
         {images.map((image, index) => (
