@@ -19,7 +19,7 @@ const projectData = [
       architecture pattern.
       
       I worked on this project from 2023-02-01 to current date.`,
-    image: CommunityAliThumbnail,
+    images: [CommunityAliThumbnail],
     link: "https://www.communityali.org/",
   },
 ];
