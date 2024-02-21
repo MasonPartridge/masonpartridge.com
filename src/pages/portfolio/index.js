@@ -6,6 +6,7 @@ import {
   Switch,
   Route,
   useRouteMatch,
+    Link,
 } from "react-router-dom";
 import Project from "@components/Project";
 
@@ -20,7 +21,16 @@ export default function Portfolio() {
           </div>
         </Route>
         <Route path={path}>
-          <div className="flex flex-col items-center h-screen">
+          <div className="flex flex-col items-center h-screen font-tech pt-16 gap-6">
+        <div className="text-2xl justify-start w-full max-w-screen-lg">
+          <Link to="/" className="text-text hover:font-bold">
+            {"Home "}
+          </Link>
+          <span className="text-text">{"> "}</span>
+          <Link to="/portfolio" className="text-white hover:font-bold">
+            {"Portfolio "}
+          </Link>
+        </div>
             <PortfolioGallery titlePrefix="" />
           </div>
         </Route>
