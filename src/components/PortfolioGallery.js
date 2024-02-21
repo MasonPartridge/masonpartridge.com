@@ -81,7 +81,7 @@ export function ProjectCard(props) {
   return (
     <div className="rounded-lg">
       <img src={image} alt="" />
-      <Link to={`/portfolio/${portfolioLink}`} className="text-white">
+      <Link to={`/portfolio/:${portfolioLink}`} className="text-white">
         {title}
       </Link>
       <a className="font-bold" href={link}>

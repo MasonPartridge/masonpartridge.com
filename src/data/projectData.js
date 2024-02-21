@@ -2,7 +2,7 @@ import CommunityAliThumbnail from "@picture/CommunityAliThumbnail.png";
 
 const projectData = [
   {
-    title: "Community Ali - Full Stack Web Developer",
+    title: "Community Ali",
     body: `I worked as a full stack web developer for Community Ali, 
       a startup that aims to connect people with their local communities. 
       The tech stack I used while doing work for Communnity Ali was 
@@ -19,7 +19,7 @@ const projectData = [
       architecture pattern.
       
       I worked on this project from 2023-02-01 to current date.`,
-    images: [CommunityAliThumbnail],
+    images: [CommunityAliThumbnail, CommunityAliThumbnail, CommunityAliThumbnail],
     link: "https://www.communityali.org/",
   },
 ];

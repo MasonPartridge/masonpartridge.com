@@ -15,7 +15,9 @@ export default function Portfolio() {
     <div>
       <Switch>
         <Route path={path + "/:projectId"}>
-          <Project />
+          <div className="flex flex-col items-center w-full min-h-screen pt-16">
+            <Project />
+          </div>
         </Route>
         <Route path={path}>
           <div className="flex flex-col items-center h-screen">
