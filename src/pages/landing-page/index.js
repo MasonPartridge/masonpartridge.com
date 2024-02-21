@@ -4,6 +4,7 @@ import Experience from "./Experience";
 import Header from "./Header";
 import Expertise from "./Expertise";
 import NavigationBar from "@components/NavigationBar";
+import PortfolioGallery from "@components/PortfolioGallery";
 
 export default function LandingPage() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
@@ -27,7 +28,7 @@ export default function LandingPage() {
         {isMobile && <hr className="w-[90%] border-4 border-secondary" />}
         <Expertise />
         <Technologies />
-        <Experience isMobile={isMobile} />
+        <PortfolioGallery titlePrefix="" />
       </div>
       <Footer />
     </div>
