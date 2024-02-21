@@ -63,12 +63,14 @@ const projects = [
 export default function PortfolioGallery(props) {
   const { titlePrefix } = props;
   return (
-    <div className="flex pt-8 text-text font-tech flex-col gap-4 max-w-screen-lg items-center">
-      <Title prefix={titlePrefix} title="Portfolio" />
-      <div className="flex flex-row gap-4">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
-        ))}
+    <div>
+      <div className="flex pt-8 text-text font-tech flex-col gap-4 max-w-screen-lg items-center">
+        <Title prefix={titlePrefix} title="Portfolio" />
+        <div className="flex flex-row gap-4">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -79,8 +81,12 @@ export function ProjectCard(props) {
   return (
     <div className="rounded-lg">
       <img src={image} alt="" />
-      <Link to={`/portfolio/${portfolioLink}`} className="text-white">{title}</Link>
-      <a className="font-bold" href={link}>Link</a>
+      <Link to={`/portfolio/${portfolioLink}`} className="text-white">
+        {title}
+      </Link>
+      <a className="font-bold" href={link}>
+        Link
+      </a>
       <hr />
     </div>
   );

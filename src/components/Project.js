@@ -1,7 +1,10 @@
 import React from 'react';
+import projectData from '@data/projectData';
+import { useParams } from 'react-router-dom';
 
-export default function Project(props) {
-    const { title, body, images, link } = props;
+const Project = ({match}) => {
+    let { topicId } = useParams();
+    const { title, body, images, link } = projectData[projectId];
     return (
         <div className="">
             <h1>{title}</h1>
@@ -16,3 +19,5 @@ export default function Project(props) {
         </div>
     )
 }
+
+export default Project;
