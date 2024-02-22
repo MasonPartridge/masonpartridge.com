@@ -1,5 +1,10 @@
 import React from "react";
 
+/***
+ * Title component
+ * @param {object} props - prefix, title
+ * @returns {JSX.Element}
+ */
 export default function Title(props) {
     const {prefix, title} = props;
   return (
