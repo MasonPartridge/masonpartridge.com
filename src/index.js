@@ -11,7 +11,7 @@ export default function App() {
   return (
     <Router>
       <NavigationBar />
-      <div className="pt-16 bg-background">
+      <div className="pt-16 bg-background text-text font-tech">
         <Switch>
           <Route path="/portfolio">
             <Portfolio />

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Technologies from "./Technologies";
-import Experience from "./Experience";
 import Header from "./Header";
 import Expertise from "./Expertise";
-import NavigationBar from "@components/NavigationBar";
 import PortfolioGallery from "@components/PortfolioGallery";
+import WorkHistory from "./WorkHistory";
 
 export default function LandingPage() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
@@ -29,6 +28,7 @@ export default function LandingPage() {
         <Expertise />
         <Technologies />
         <PortfolioGallery titlePrefix="" />
+        <WorkHistory />
       </div>
       <Footer />
     </div>

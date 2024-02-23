@@ -1,6 +1,6 @@
 import React from "react";
 
-/***
+/**
  * Title component
  * @param {object} props - prefix, title
  * @returns {JSX.Element}
