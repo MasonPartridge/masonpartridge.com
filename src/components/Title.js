@@ -10,7 +10,7 @@ export default function Title(props) {
   return (
     <h1 className="text-4xl lg:text-5xl font-bold w-full">
       {prefix}
-      <b className="text-5xl lg:text-6xl">({title})</b>
+      <b className="text-5xl lg:text-6xl">{title}</b>
     </h1>
   );
 }

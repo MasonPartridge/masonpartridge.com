@@ -4,7 +4,7 @@ import Title from "@components/Title";
 export default function WorkHistory() {
   return (
     <div className="w-full flex flex-col gap-16">
-      <Title title={"Work History"} prefix={".04"} />
+      <Title title={"Work History"} prefix={"04."} />
       {WORKDATA.map((work, index) => (
         <WorkSection key={index} workId={index} />
       ))}

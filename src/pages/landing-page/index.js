@@ -27,8 +27,8 @@ export default function LandingPage() {
         {isMobile && <hr className="w-[90%] border-4 border-secondary" />}
         <Expertise />
         <Technologies />
-        <PortfolioGallery titlePrefix="" />
-        <WorkHistory />
+        <PortfolioGallery titlePrefix="03." />
+        <WorkHistory/>
       </div>
       <Footer />
     </div>
