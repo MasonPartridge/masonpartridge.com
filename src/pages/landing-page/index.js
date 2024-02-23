@@ -22,7 +22,7 @@ export default function LandingPage() {
 
   return (
     <div className="font-tech overflow-hidden bg-background flex flex-col items-center">
-      <div className="max-w-screen-xl flex flex-col items-start w-[100%] px-16 h-[100%]">
+      <div className="max-w-screen-xl flex flex-col gap-32 my-32 items-start w-[100%] px-16 h-[100%]">
         <Header isMobile={isMobile} />
         {isMobile && <hr className="w-[90%] border-4 border-secondary" />}
         <Expertise />

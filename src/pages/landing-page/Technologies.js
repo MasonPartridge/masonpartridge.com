@@ -94,7 +94,7 @@ export default function Skills() {
   return (
     <div className="w-[100%] flex justify-center ">
       <div
-        className="flex flex-col gap-8 justify-center w-[100%] items-center py-32 text-white"
+        className="flex flex-col gap-8 justify-center w-[100%] items-center text-white"
         id="skills"
       >
       <Title prefix="02." title="Technologies" />
