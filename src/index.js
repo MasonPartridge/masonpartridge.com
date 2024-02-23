@@ -6,6 +6,7 @@ import CommunityAliPage from "./pages/portfolio/communityali/index.js";
 import "@styles/style.css";
 import Portfolio from "./pages/portfolio/index.js";
 import NavigationBar from "@components/NavigationBar";
+import Footer from "@components/Footer.js";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           </Route>
         </Switch>
       </div>
+      <Footer />
     </Router>
   );
 }
