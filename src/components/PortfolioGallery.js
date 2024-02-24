@@ -9,7 +9,7 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const projects = [
   {
-    title: "Community Ali - Full Stack Web Developer",
+    title: "Community Ali",
     body: `I worked as a full stack web developer for Community Ali, 
       a startup that aims to connect people with their local communities. 
       The tech stack I used while doing work for Communnity Ali was 
@@ -63,31 +63,30 @@ const projects = [
 export default function PortfolioGallery(props) {
   const { titlePrefix } = props;
   return (
-    <div>
-      <div className="flex pt-8 text-text font-tech flex-col gap-4 max-w-screen-lg items-center">
+      <div className="flex pt-8 text-text w-full font-tech flex-col gap-4 items-center">
         <Title prefix={titlePrefix} title="Portfolio" />
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-row gap-4 flex-wrap justify-between w-full">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
         </div>
       </div>
-    </div>
   );
 }
 
 export function ProjectCard(props) {
   const { title, body, image, link, portfolioLink } = props;
   return (
-    <div className="rounded-lg">
-      <img src={image} alt="" />
-      <Link to={`/portfolio/:${portfolioLink}`} className="text-white">
-        {title}
-      </Link>
-      <a className="font-bold" href={link}>
-        Link
-      </a>
-      <hr />
+    <div className="overflow-clip w-80 max-w-[373px] flex-grow bg-secondary hover:min-w-[400px]">
+      <div className="h-[75%] overflow-clip"><Link to={`/portfolio/:${portfolioLink}`}><img src={image} className="h-full w-full" alt="" /></Link></div>
+      <div className="p-4 flex flex-col">
+        <Link to={`/portfolio/:${portfolioLink}`} className="text-white hover:font-bold">
+          <h1 className="text-lg">{title}</h1>
+        </Link>
+        <a className="hover:font-bold" href={link}>
+          {'Link >'}
+        </a>
+      </div>
     </div>
   );
 }
