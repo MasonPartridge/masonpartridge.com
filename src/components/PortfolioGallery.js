@@ -63,7 +63,7 @@ const projects = [
 export default function PortfolioGallery(props) {
   const { titlePrefix } = props;
   return (
-      <div className="flex pt-8 text-text w-full font-tech flex-col gap-4 items-center">
+      <div className="flex pt-8 text-text w-full font-tech flex-col gap-16 items-center">
         <Title prefix={titlePrefix} title="Portfolio" />
         <div className="flex flex-row gap-4 flex-wrap justify-between w-full">
           {projects.map((project, index) => (

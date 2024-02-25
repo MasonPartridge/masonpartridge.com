@@ -75,7 +75,7 @@ export default function Skills() {
     {
       image: NextJSLogo,
       link: "https://nextjs.org/",
-    }
+    },
   ];
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -94,10 +94,10 @@ export default function Skills() {
   return (
     <div className="w-[100%] flex justify-center ">
       <div
-        className="flex flex-col gap-8 justify-center w-[100%] items-center text-white"
+        className="flex flex-col gap-16 justify-center w-[100%] items-center text-white"
         id="skills"
       >
-      <Title prefix="02." title="Technologies" />
+        <Title prefix="02." title="Technologies" />
         <div className="w-[100%] gap-1 justify-center flex">
           <button
             className="embla__next border-white w-[2vw] hover:text-[2vw]"
