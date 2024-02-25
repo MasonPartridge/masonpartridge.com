@@ -50,6 +50,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "@react-pdf/renderer": "^3.3.8",
     "babel": "^6.23.0",
     "concurrently": "^8.2.1",
     "embla-carousel-autoplay": "^8.0.0-rc12",
@@ -58,6 +59,7 @@
     "nodemon": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-pdf": "^7.7.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^5.3.4",
     "react-timer-hook": "^3.0.7",

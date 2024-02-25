@@ -16,9 +16,11 @@ const config = {
   resolve: {
     alias: {
       '@picture': path.resolve(__dirname, "./public/pictures"),
+      '@public': path.resolve(__dirname, "./public"),
       '@styles': path.resolve(__dirname, "./public/styles"),
       '@components': path.resolve(__dirname, "./src/components"),
       '@data': path.resolve(__dirname, "./src/data"),
+      '@pages': path.resolve(__dirname, "./src/pages"),
     },
   },
   devServer: {
