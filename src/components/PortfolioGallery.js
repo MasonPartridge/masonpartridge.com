@@ -63,28 +63,35 @@ const projects = [
 export default function PortfolioGallery(props) {
   const { titlePrefix } = props;
   return (
-      <div className="flex pt-8 text-text w-full font-tech flex-col gap-16 items-center">
-        <Title prefix={titlePrefix} title="Portfolio" />
-        <div className="flex flex-row gap-4 flex-wrap justify-between w-full">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
-          ))}
-        </div>
+    <div className="flex pt-8 text-text w-full font-tech flex-col gap-16 items-center">
+      <Title prefix={titlePrefix} title="Portfolio" />
+      <div className="flex flex-row gap-4 flex-wrap justify-between w-full">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} {...project} />
+        ))}
       </div>
+    </div>
   );
 }
 
 export function ProjectCard(props) {
   const { title, body, image, link, portfolioLink } = props;
   return (
-    <div className="overflow-clip w-80 max-w-[373px] flex-grow bg-secondary hover:min-w-[400px]">
-      <div className="h-[75%] overflow-clip"><Link to={`/portfolio/:${portfolioLink}`}><img src={image} className="h-full w-full" alt="" /></Link></div>
+    <div className="overflow-clip w-80 max-w-[373px] flex-grow bg-secondary">
+      <div className="h-[75%] overflow-clip">
+        <Link to={`/portfolio/:${portfolioLink}`}>
+          <img src={image} className="h-full w-full hover:h-[125%] hover:w-[125%] duration-500 transition-all ease-in-out object-cover" alt="" />
+        </Link>
+      </div>
       <div className="p-4 flex flex-col">
-        <Link to={`/portfolio/:${portfolioLink}`} className="text-white hover:font-bold">
+        <Link
+          to={`/portfolio/:${portfolioLink}`}
+          className="text-white hover:font-bold"
+        >
           <h1 className="text-lg">{title}</h1>
         </Link>
         <a className="hover:font-bold" href={link}>
-          {'Link >'}
+          {"Website Link >"}
         </a>
       </div>
     </div>
