@@ -79,13 +79,13 @@ export function ProjectCard(props) {
   return (
     <div className="overflow-clip w-80 max-w-[373px] flex-grow bg-secondary">
       <div className="h-[75%] overflow-clip">
-        <Link to={`/portfolio/:${portfolioLink}`}>
+        <Link to={`/portfolio/${portfolioLink}`}>
           <img src={image} className="h-full w-full hover:h-[125%] hover:w-[125%] duration-500 transition-all ease-in-out object-cover" alt="" />
         </Link>
       </div>
       <div className="p-4 flex flex-col">
         <Link
-          to={`/portfolio/:${portfolioLink}`}
+          to={`/portfolio/${portfolioLink}`}
           className="text-white hover:font-bold"
         >
           <h1 className="text-lg">{title}</h1>

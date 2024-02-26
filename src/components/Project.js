@@ -4,7 +4,7 @@ import { useParams, Link } from "react-router-dom";
 
 const Project = ({ match }) => {
   let { projectId } = useParams();
-  const { title, body, images, link } = projectData[0];
+  const { title, body, images, link } = projectData(projectId);
   return (
     <div className="font-tech text-text max-w-screen-lg flex flex-col gap-6">
       <div className="text-2xl flex justify-between">
