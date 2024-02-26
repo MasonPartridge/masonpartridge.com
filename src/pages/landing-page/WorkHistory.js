@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Title from "@components/Title";
 
 export default function WorkHistory() {
@@ -36,42 +36,49 @@ const WORKDATA = [
 ];
 
 function WorkSection(props) {
-    const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
   const { workId } = props;
   return (
     <div className="flex flex-col gap-4">
-      <div className="h-20 flex items-center justify-between text-4xl p-4 px-8 bg-accent">
+      <button
+        onClick={() => setIsExpanded(!isExpanded)}
+        className="h-20 flex items-center justify-between text-4xl p-4 px-8 bg-accent"
+      >
         <h2>{`${WORKDATA[workId].title} @ ${WORKDATA[workId].company}`}</h2>
         <div className="flex items-center gap-4">
           <p>{WORKDATA[workId].date}</p>
-          <button onClick={() => setIsExpanded(!isExpanded)}>{(isExpanded) ? "^" : ">"}</button>
+          <button onClick={() => setIsExpanded(!isExpanded)}>
+            {isExpanded ? "^" : ">"}
+          </button>
         </div>
-      </div>
-        {isExpanded && (
-            <div className="bg-secondary p-8 text-2xl mx-4 flex flex-col gap-4">
-                {[{
-                  title: "Location",
-                  description: WORKDATA[workId].location
-                },
-                {
-                  title: "Role",
-                  description: WORKDATA[workId].role
-                },
-                {
-                  title: "Skills",
-                  description: WORKDATA[workId].Skills.join(", ")
-                },
-                {
-                  title: "Description",
-                  description: WORKDATA[workId].description
-                }
-                
-                
-                ].map((data, index) => <p key={index}>
-                  <span className="text-4xl bg-primary">{data.title}</span>: {data.description}
-                </p>)}
-            </div>
-        )}
+      </button>
+      {isExpanded && (
+        <div className="bg-secondary p-8 text-2xl mx-4 flex flex-col gap-4">
+          {[
+            {
+              title: "Location",
+              description: WORKDATA[workId].location,
+            },
+            {
+              title: "Role",
+              description: WORKDATA[workId].role,
+            },
+            {
+              title: "Skills",
+              description: WORKDATA[workId].Skills.join(", "),
+            },
+            {
+              title: "Description",
+              description: WORKDATA[workId].description,
+            },
+          ].map((data, index) => (
+            <p key={index}>
+              <span className="text-4xl bg-primary">{data.title}</span>:{" "}
+              {data.description}
+            </p>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
