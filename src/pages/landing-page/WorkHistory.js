@@ -69,9 +69,9 @@ function WorkSection(props) {
         <h2>{`${WORKDATA[workId].title} @ ${WORKDATA[workId].company}`}</h2>
         <div className="flex items-center gap-4">
           <p>{WORKDATA[workId].date}</p>
-          <button onClick={() => setIsExpanded(!isExpanded)}>
+          <div>
             {isExpanded ? "^" : ">"}
-          </button>
+          </div>
         </div>
       </button>
       {isExpanded && (
