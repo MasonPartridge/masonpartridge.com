@@ -9,9 +9,26 @@ import Footer from "@components/Footer.js";
 import Resume from "@pages/resume/index.js";
 
 export default function App() {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 768) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    }
+
+    handleResize();
+    
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  });
+
   return (
     <Router>
-      <NavigationBar />
+      <NavigationBar isMobile={isMobile} />
       <div className="pt-16 bg-background text-text font-tech">
         <Switch>
           <Route path="/portfolio">
