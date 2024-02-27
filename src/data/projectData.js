@@ -3,33 +3,19 @@ import ProfilioThumbnail from "@picture/ProfilioThumbnail.png";
 import PadserThumbnail from "@picture/PadserThumbnail.png";
 import ClubsiteThumbnail from "@picture/club-website.png";
 
+const CommuntiAliImagesImport = require.context('../../public/pictures/project/communityali', false, /\.(png|jpe?g|svg)$/);
+const CommuntiAliImages = CommuntiAliImagesImport.keys().map(image => CommuntiAliImagesImport(image));
+
 const projectData = [
   {
     title: "Community Ali",
-    body: `I worked as a full stack web developer for Community Ali, 
-      a startup that aims to connect people with their local communities. 
-      The tech stack I used while doing work for Communnity Ali was 
-      React.js, tailwindcss, and Webpack for frontend, Node.js, Express.js, 
-      Mongoose.js, AWS SNS, AWS SES, and MongoDB for backend, and Heroku for hosting. 
-      
-      My main responsibilities included: repository management, 
-      webpack configuration, bug fixing and feature implementation, 
-      and database management. With my hardest callenges being: 
-      implementing the front end backend for a messaging system and inbox, 
-      that allows services to send messages to users. Refactoring the frontend 
-      of website to make use of react.js, webpack, and tailwindcss. 
-      Refactoring the backend to use the MVC, Model, View, Controller 
-      architecture pattern.
-      
-      I worked on this project from 2023-02-01 to current date.`,
-    images: [CommunityAliThumbnail, CommunityAliThumbnail, CommunityAliThumbnail],
+    body: `A website for MJC and the Modesto residents to find volunteer, internship, community events, and club opportunities. My main contributions are rewriting the website to use of React.js and tailwind, refactoring the Backend's folder structure, controller methods, and api calls, writing documentation, and setting up and managing the Community Ali repo on Github, building the front and Backend for the announcement and messaging system, and implementing the Backend for service sorting.`,
+    images: CommuntiAliImages,
     link: "https://www.communityali.org/",
   },
   {
     title: "MJC Club Application Website",
-    body: `A website to handle club applications and renewal for MJC,
-     I worked mainly on the form Frontend and some Backend, technical form Backend, 
-     and some of the login and signup page Frontend.`,
+    body: `A website to handle club applications and renewal for MJC, I worked mainly on the form Frontend and some Backend, technical form Backend, and some of the login and signup page Frontend.`,
     images: [ClubsiteThumbnail],
     imageSide: "center",
     link: "https://club-website-two.vercel.app/",
@@ -49,7 +35,6 @@ const projectData = [
     body: `I worked on this project as a way to learn more about javascript, html, and css.
   I used html, css, and javascript for the frontend and am using Github Pages for hosting.`,
     images: [PadserThumbnail],
-    imageSide: "left",
     link: "https://masonpartridge.github.io/Padser-SketchPad/",
   },
 ];
@@ -68,7 +53,5 @@ function getProjectData(projectId) {
       return projectData[0];
   }
 }
-
-
 
 export default getProjectData;
