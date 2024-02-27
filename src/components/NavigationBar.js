@@ -40,19 +40,19 @@ function MobileNavigationBar() {
     <div
       className={
         `${open ? "bg-background " : ""}` +
-        "fixed top-0 left-0 w-screen h-screen z-50 flex flex-col py-10 text-text font-tech"
+        "fixed top-0 left-0 w-screen h-screen z-50 flex flex-col p-10 text-text font-tech"
       }
     >
       <div className="flex justify-end">
         <button
           onClick={() => setOpen(!open)}
-          className="flex relative flex-col w-12 h-10 gap-4 mx-10"
+          className="flex relative flex-col w-12 h-10 gap-4"
         >
           <div
-            className={"bg-text w-12 h-3 absolute transition-all duration-500 -translate-x-1/2 -translate-y-1/2 top-0" + `${open ? " rotate-45 top-1/2" : ""}`}
+            className={"bg-text w-12 h-3 absolute transition-all duration-500 -translate-y-1/2 top-0" + `${open ? " rotate-45 top-1/2" : ""}`}
           ></div>
           <div
-            className={"bg-text w-12 h-3 absolute transition-all duration-500 -translate-x-1/2 -translate-y-1/2 bottom-0" + `${open ? " -rotate-45 top-1/2" : ""}`}
+            className={"bg-text w-12 h-3 absolute transition-all duration-500 -translate-y-1/2 bottom-0" + `${open ? " -rotate-45 top-1/2" : ""}`}
           ></div>
         </button>
       </div>
