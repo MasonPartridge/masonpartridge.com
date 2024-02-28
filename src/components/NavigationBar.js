@@ -36,16 +36,20 @@ export default function NavigationBar(props) {
 function MobileNavigationBar() {
   const [open, setOpen] = useState(false);
 
+  function onClick() {
+    setOpen(!open);
+  }
+
   return (
     <div
       className={
         `${open ? "bg-background " : ""}` +
-        "fixed top-0 left-0 w-screen h-screen z-50 flex flex-col p-10 text-text font-tech"
+        "fixed top-0 left-0 w-screen z-50 flex flex-col p-10 text-text font-tech"
       }
     >
       <div className="flex justify-end">
         <button
-          onClick={() => setOpen(!open)}
+          onClick={onClick}
           className="flex relative flex-col w-12 h-10 gap-4"
         >
           <div
@@ -57,15 +61,15 @@ function MobileNavigationBar() {
         </button>
       </div>
       {open && (
-        <div className="py-16 w-full h-full bg-background z-40 text-4xl">
+        <div className="py-16 w-full h-screen bg-background z-40 text-4xl">
           <div className="flex flex-col gap-4 items-center h-full">
-            <Link className="hover:font-bold text-xl" to={"/"}>
+            <Link className="hover:font-bold text-xl" onClick={onClick} to={"/"}>
               HOME
             </Link>
-            <Link className="hover:font-bold text-xl" to={"/portfolio"}>
+            <Link className="hover:font-bold text-xl" onClick={onClick} to={"/portfolio"}>
               PORTFOLIO
             </Link>
-            <Link className="hover:font-bold text-xl" to={"/resume"}>
+            <Link className="hover:font-bold text-xl" onClick={onClick} to={"/resume"}>
               RESUME
             </Link>
           </div>
