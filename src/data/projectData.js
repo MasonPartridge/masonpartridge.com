@@ -1,10 +1,11 @@
-import CommunityAliThumbnail from "@picture/CommunityAliThumbnail.png";
 import ProfilioThumbnail from "@picture/ProfilioThumbnail.png";
 import PadserThumbnail from "@picture/PadserThumbnail.png";
-import ClubsiteThumbnail from "@picture/club-website.png";
 
 const CommuntiAliImagesImport = require.context('../../public/pictures/project/communityali', false, /\.(png|jpe?g|svg)$/);
 const CommuntiAliImages = CommuntiAliImagesImport.keys().map(image => CommuntiAliImagesImport(image));
+
+const ClubsiteImagesImport = require.context('../../public/pictures/project/mjc_club', false, /\.(png|jpe?g|svg)$/);
+const ClubsiteImages = ClubsiteImagesImport.keys().map(image => ClubsiteImagesImport(image));
 
 const projectData = [
   {
@@ -15,8 +16,8 @@ const projectData = [
   },
   {
     title: "MJC Club Application Website",
-    body: `A website to handle club applications and renewal for MJC, I worked mainly on the form Frontend and some Backend, technical form Backend, and some of the login and signup page Frontend.`,
-    images: [ClubsiteThumbnail],
+    body: `A website to handle club applications and renewal for MJC, I worked mainly on the club submission form Frontend and Backend, did some of the login and signup page Frontend.`,
+    images: ClubsiteImages,
     imageSide: "center",
     link: "https://club-website-two.vercel.app/",
   },
