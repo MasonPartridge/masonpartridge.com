@@ -29,7 +29,7 @@ export default function App() {
   return (
     <Router>
       <NavigationBar isMobile={isMobile} />
-      <div className="pt-16 bg-background text-text font-tech">
+      <div className="pt-16 bg-background text-text font-tech overflow-hidden">
         <Switch>
           <Route path="/portfolio">
             <Portfolio />

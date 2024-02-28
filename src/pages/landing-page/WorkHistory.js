@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import Title from "@components/Title";
 
-export default function WorkHistory() {
+export default function WorkHistory(props) {
+  const { isMobile } = props;
   return (
     <div className="w-full flex flex-col gap-16">
       <Title title={"Work History"} prefix={"04."} />
       <div className="flex flex-col gap-8">
         {WORKDATA.map((work, index) => (
-          <WorkSection key={index} workId={index} />
+          <WorkSection isMobile={isMobile} key={index} workId={index} />
         ))}
       </div>
     </div>
@@ -59,16 +60,16 @@ const WORKDATA = [
 
 function WorkSection(props) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const { workId } = props;
+  const { workId, isMobile } = props;
   return (
     <div className="flex flex-col gap-4">
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="h-20 flex items-center justify-between text-4xl p-4 px-8 bg-accent"
+        className="h-20 flex items-center justify-between text-xl lg:text-4xl p-4 px-8 bg-accent"
       >
         <h2>{`${WORKDATA[workId].title} @ ${WORKDATA[workId].company}`}</h2>
         <div className="flex items-center gap-4">
-          <p>{WORKDATA[workId].date}</p>
+          {isMobile && <p>{WORKDATA[workId].date}</p>}
           <div>
             {isExpanded ? "^" : ">"}
           </div>
