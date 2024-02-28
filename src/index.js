@@ -27,23 +27,25 @@ export default function App() {
   });
 
   return (
-    <Router>
-      <NavigationBar isMobile={isMobile} />
-      <div className="pt-16 bg-background text-text font-tech overflow-hidden">
-        <Switch>
-          <Route path="/portfolio">
-            <Portfolio />
-          </Route>
-          <Route path="/resume">
-            <Resume />
-          </Route>
-          <Route path="/">
-            <LandingPage />
-          </Route>
-        </Switch>
-      </div>
-      <Footer />
-    </Router>
+    <div className="max-w-[100vw] overflow-clip">
+      <Router>
+        <NavigationBar isMobile={isMobile} />
+        <div className="pt-16 bg-background text-text font-tech">
+          <Switch>
+            <Route path="/portfolio">
+              <Portfolio />
+            </Route>
+            <Route path="/resume">
+              <Resume />
+            </Route>
+            <Route path="/">
+              <LandingPage />
+            </Route>
+          </Switch>
+        </div>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
