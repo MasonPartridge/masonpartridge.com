@@ -27,10 +27,10 @@ export default function App() {
   });
 
   return (
-    <div className="max-w-[100vw] overflow-clip">
+    <div className="max-w-[100vw] bg-background overflow-x-clip">
       <Router>
         <NavigationBar isMobile={isMobile} />
-        <div className="pt-16 bg-background text-text font-tech">
+        <div className="pt-16 text-text font-tech">
           <Switch>
             <Route path="/portfolio">
               <Portfolio />

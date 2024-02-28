@@ -77,10 +77,14 @@ export default function PortfolioGallery(props) {
 export function ProjectCard(props) {
   const { title, body, image, link, portfolioLink } = props;
   return (
-    <div className="overflow-clip w-80 max-w-[373px] flex-grow bg-secondary">
+    <div className="w-80 max-w-[373px] flex-grow bg-secondary h-fit">
       <div className="h-[75%] overflow-clip">
         <Link to={`/portfolio/${portfolioLink}`}>
-          <img src={image} className="h-full w-full hover:h-[125%] hover:w-[125%] duration-500 transition-all ease-in-out object-cover" alt="" />
+          <img
+            src={image}
+            className="h-full w-full hover:h-[125%] hover:w-[125%] duration-500 transition-all ease-in-out object-cover"
+            alt=""
+          />
         </Link>
       </div>
       <div className="p-4 flex flex-col">

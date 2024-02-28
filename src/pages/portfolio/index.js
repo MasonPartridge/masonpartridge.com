@@ -13,7 +13,6 @@ import Project from "@components/Project";
 export default function Portfolio() {
   let { path, url } = useRouteMatch();
   return (
-    <div>
       <Switch>
         <Route path={path + "/:projectId"}>
           <div className="flex flex-col items-center w-full min-h-screen pt-16">
@@ -21,7 +20,7 @@ export default function Portfolio() {
           </div>
         </Route>
         <Route path={path}>
-          <div className="flex flex-col items-center h-screen font-tech pt-16 gap-6">
+          <div className="flex flex-col items-center min-h-screen font-tech pt-16 gap-6">
             <div className="text-2xl justify-start w-full max-w-screen-lg">
               <Link to="/" className="text-text hover:font-bold">
                 {"Home "}
@@ -37,6 +36,5 @@ export default function Portfolio() {
           </div>
         </Route>
       </Switch>
-    </div>
   );
 }
