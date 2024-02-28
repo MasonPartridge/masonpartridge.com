@@ -2,7 +2,7 @@ import React from "react";
 import Title from "@components/Title";
 
 import CommunityAliThumbnail from "@picture/CommunityAliThumbnail.png";
-import ProfilioThumbnail from "@picture/ProfilioThumbnail.png";
+import ProfilioThumbnail from "@picture/project/masonweb/1header.png";
 import PadserThumbnail from "@picture/PadserThumbnail.png";
 import ClubsiteThumbnail from "@picture/club-website.png";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
