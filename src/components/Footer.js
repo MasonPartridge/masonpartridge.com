@@ -9,8 +9,7 @@ export default function Footer() {
       >
         <h1 className="text-[300%]">Contact Me:</h1>
         <p className="text-[150%]">
-          If you need a website made quickly and for cheap I can assist! I am
-          only an email away:{" "}
+          Available for hire at:{" "}
           <a
             className="text-highlight"
             href="mailto: masonepartridge@gmail.com"
@@ -28,7 +27,7 @@ export default function Footer() {
           <a href="mailto: masonepartridge@gmail.com">
             <i className="fa-solid fa-envelope text-white"></i>
           </a>
-          <p>Phone: +1 (209) 535-7036</p>
+          <p className="text-sm md:text-lg">Phone: +1 (209) 535-7036</p>
         </div>
       </div>
     </div>
