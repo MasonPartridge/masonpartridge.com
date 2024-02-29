@@ -8,9 +8,9 @@ import React from "react";
 export default function Title(props) {
     const {prefix, title} = props;
   return (
-    <h1 className="text-4xl lg:text-5xl font-bold w-full">
+    <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold w-full">
       {prefix}
-      <b className="text-5xl lg:text-6xl">{title}</b>
+      <b className="text-4xl md:text-5xl lg:text-6xl">{title}</b>
     </h1>
   );
 }
