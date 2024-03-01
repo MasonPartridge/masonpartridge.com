@@ -375,7 +375,8 @@ video {
 .z-50{z-index:50 !important}
 .mx-3{margin-left:0.75rem !important;margin-right:0.75rem !important}
 .mx-4{margin-left:1rem !important;margin-right:1rem !important}
-.my-32{margin-top:8rem !important;margin-bottom:8rem !important}
+.mt-16{margin-top:4rem !important}
+.mt-32{margin-top:8rem !important}
 .flex{display:flex !important}
 .h-10{height:2.5rem !important}
 .h-20{height:5rem !important}
@@ -384,15 +385,16 @@ video {
 .h-\[100\%\]{height:100% !important}
 .h-\[50vh\]{height:50vh !important}
 .h-\[75\%\]{height:75% !important}
+.h-fit{height:-moz-fit-content !important;height:fit-content !important}
 .h-full{height:100% !important}
 .h-screen{height:100vh !important}
 .min-h-screen{min-height:100vh !important}
-.w-1\/2{width:50% !important}
 .w-12{width:3rem !important}
 .w-2{width:0.5rem !important}
 .w-80{width:20rem !important}
 .w-\[100\%\]{width:100% !important}
 .w-\[2vw\]{width:2vw !important}
+.w-\[75\%\]{width:75% !important}
 .w-\[90\%\]{width:90% !important}
 .w-full{width:100% !important}
 .w-screen{width:100vw !important}
@@ -425,6 +427,7 @@ video {
 .overflow-hidden{overflow:hidden !important}
 .overflow-clip{overflow:clip !important}
 .overflow-scroll{overflow:scroll !important}
+.overflow-x-clip{overflow-x:clip !important}
 .border{border-width:1px !important}
 .border-4{border-width:4px !important}
 .border-b-2{border-bottom-width:2px !important}
@@ -458,7 +461,6 @@ video {
 .font-tech{font-family:Share Tech Mono, monospace !important}
 .text-2xl{font-size:1.5rem !important;line-height:2rem !important}
 .text-4xl{font-size:2.25rem !important;line-height:2.5rem !important}
-.text-5xl{font-size:3rem !important;line-height:1 !important}
 .text-6xl{font-size:3.75rem !important;line-height:1 !important}
 .text-\[150\%\]{font-size:150% !important}
 .text-\[250\%\]{font-size:250% !important}
@@ -500,6 +502,12 @@ video {
 .hover\:w-\[125\%\]:hover{width:125% !important}
 .hover\:text-\[2vw\]:hover{font-size:2vw !important}
 .hover\:font-bold:hover{font-weight:700 !important}
+@media (min-width: 768px){
+.md\:w-1\/2{width:50% !important}
+.md\:text-2xl{font-size:1.5rem !important;line-height:2rem !important}
+.md\:text-4xl{font-size:2.25rem !important;line-height:2.5rem !important}
+.md\:text-5xl{font-size:3rem !important;line-height:1 !important}
+.md\:text-lg{font-size:1.125rem !important;line-height:1.75rem !important}}
 @media (min-width: 1024px){
 .lg\:max-w-\[35\%\]{max-width:35% !important}
 .lg\:max-w-\[40\%\]{max-width:40% !important}
