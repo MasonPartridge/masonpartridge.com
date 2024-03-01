@@ -76,7 +76,7 @@ function WorkSection(props) {
         </div>
       </button>
       {isExpanded && (
-        <div className="bg-secondary p-8 text-2xl mx-4 flex flex-col gap-4">
+        <div className="bg-secondary p-8 md:text-2xl mx-4 flex flex-col gap-4">
           {[
             {
               title: "Location",
