@@ -6,8 +6,8 @@ const Project = ({ match }) => {
   let { projectId } = useParams();
   const { title, body, images, link } = projectData(projectId);
   return (
-    <div className="font-tech text-text max-w-screen-lg flex flex-col gap-6">
-      <div className="text-2xl flex justify-between">
+    <div className="font-tech text-text max-w-screen-lg flex flex-col px-8 gap-6">
+      <div className="md:text-2xl flex justify-between">
         <div>
           <Link to="/" className="text-text hover:font-bold">
             {"Home "}
@@ -29,7 +29,7 @@ const Project = ({ match }) => {
       <hr />
       <div className="flex gap-4 overflow-scroll">
         {images.map((image, index) => (
-          <img className="w-1/2" key={index} src={image} alt="" />
+          <img className="w-[75%] md:w-1/2" key={index} src={image} alt="" />
         ))}
       </div>
       <p>{body}</p>
