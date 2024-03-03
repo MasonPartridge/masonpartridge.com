@@ -7,6 +7,7 @@ import Portfolio from "./pages/portfolio/index.js";
 import NavigationBar from "@components/NavigationBar";
 import Footer from "@components/Footer.js";
 import Resume from "@pages/resume/index.js";
+import PageNotFound from "@pages/NotFoundpage/index.js";
 
 export default function App() {
   const [isMobile, setIsMobile] = React.useState(false);
@@ -40,6 +41,9 @@ export default function App() {
             </Route>
             <Route path="/">
               <LandingPage />
+            </Route>
+            <Route path="*">
+              <PageNotFound />
             </Route>
           </Switch>
         </div>
