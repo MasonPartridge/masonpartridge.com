@@ -13,7 +13,8 @@
     "postcss": "postcss ./public/styles/style.css -o dist/main.css",
     "dev": "concurrently \"npm run postcss\" \"webpack-dev-server\"",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
