@@ -14,7 +14,8 @@
     "dev": "concurrently \"npm run postcss\" \"webpack-dev-server\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "start": "node app.js"
+    "start": "node app.js",
+    "heroku-postbuild": "webpack -p"
   },
   "repository": {
     "type": "git",
